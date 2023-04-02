@@ -29,6 +29,7 @@ public class PauseHandler : MonoBehaviour
         volumeLevel = sliderValue;
     }
 
+    // checks every frame, fixed is per tick -> see how to define tick
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))

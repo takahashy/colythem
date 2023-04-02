@@ -13,10 +13,10 @@ public class GameHandler : MonoBehaviour {
 
     void Start () {
         UpdateLives();
-        if (isEnd){
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
+        // if (isEnd){
+        //     Cursor.lockState = CursorLockMode.None;
+        //     Cursor.visible = true;
+        // }
     }
 
     void FixedUpdate () {
