@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Silvia_Scene.unity
-    guid: 21a70043c09544ed8a09b63b9a272fb0
+    path: Assets/Scenes/Start Screen.unity
+    guid: d6d071888f89a40deb85308374e8a5cb
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Red_Scene.unity
+    guid: 21a70043c09544ed8a09b63b9a272fb0
   m_configObjects: {}
