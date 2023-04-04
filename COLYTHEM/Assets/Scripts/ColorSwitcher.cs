@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ColorSwitcher : MonoBehaviour
 {
-    private  SpriteRenderer spriteRenderer ;
+    private  SpriteRenderer spriteRenderer;
 
     void Start()
     {
@@ -13,7 +13,8 @@ public class ColorSwitcher : MonoBehaviour
     {
         // Press 'r' to switch to red
         if (Input.GetKeyDown(KeyCode.R)) {
-            spriteRenderer.color = Color.red;
+            var darkred = Color.red * 0.5f;
+            spriteRenderer.color = darkred;
         }
 
         // Press 'b' to switch to blue
@@ -25,7 +26,7 @@ public class ColorSwitcher : MonoBehaviour
         // Press 'space' to switch to white
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            spriteRenderer.color = Color.blue;
+            spriteRenderer.color = Color.clear;
         }
     }
 }
