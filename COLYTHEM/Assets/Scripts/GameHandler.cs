@@ -47,4 +47,9 @@ public class GameHandler : MonoBehaviour {
             Application.Quit();
         #endif
     }
+
+    public void playerGetHit(int damage) {
+        // check color of projectile vs color of player
+        // if different, update player health with damage
+    }
 }
