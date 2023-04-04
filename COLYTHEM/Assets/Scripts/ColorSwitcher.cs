@@ -13,19 +13,19 @@ public class ColorSwitcher : MonoBehaviour
     {
         // Press 'r' to switch to red
         if (Input.GetKeyDown(KeyCode.R)) {
-            spriteRenderer.material.color = Color.red;
+            spriteRenderer.color = Color.red;
         }
 
         // Press 'b' to switch to blue
         else if (Input.GetKeyDown(KeyCode.B))
         {
-            spriteRenderer.material.color = Color.blue;
+            spriteRenderer.color = Color.white;
         }
 
         // Press 'space' to switch to white
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            spriteRenderer.material.color = Color.white;
+            spriteRenderer.color = Color.blue;
         }
     }
 }
