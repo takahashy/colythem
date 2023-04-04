@@ -11,10 +11,14 @@ public class PlayerMoveAround : MonoBehaviour {
       public static float runSpeed = 10f;
       public float startSpeed = 10f;
       public bool isAlive = true;
+      private Animator anim;
+      public bool animate;
 
       void Start(){
            //anim = gameObject.GetComponentInChildren<Animator>();
            rb2D = transform.GetComponent<Rigidbody2D>();
+           anim = GetComponentInChildren<Animator>();
+
       }
 
       void Update(){
@@ -26,11 +30,13 @@ public class PlayerMoveAround : MonoBehaviour {
                 //   transform.position = transform.position + hvMove;
 
                   if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)){
+                        UpdateAnimationAndMove(true);
                   //     anim.SetBool ("Walk", true);
                   //     if (!WalkSFX.isPlaying){
                   //           WalkSFX.Play();
                   //     }
                   } else {
+                        UpdateAnimationAndMove(false);
                   //     anim.SetBool ("Walk", false);
                   //     WalkSFX.Stop();
                  }
@@ -38,6 +44,17 @@ public class PlayerMoveAround : MonoBehaviour {
                   // Turning. Reverse if input is moving the Player right and Player faces left.
                  if ((hvMove.x <0 && !FaceRight) || (hvMove.x >0 && FaceRight)){
                         playerTurn();
+                  }
+            }
+      }
+
+
+      public void UpdateAnimationAndMove(bool moving) {
+            if(anim){
+                  if (moving) {
+                  anim.SetBool("Walk", true);
+                  } else {
+                  anim.SetBool("Walk", false);
                   }
             }
       }
