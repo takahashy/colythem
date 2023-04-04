@@ -352,6 +352,8 @@ MonoBehaviour:
   color: 0
   lives: 3
   isEnd: 0
+  _liveSprites: []
+  _livesImage: {fileID: 0}
 --- !u!114 &905800901399890766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,26 +410,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3603874202803916945, guid: 409a6a6a95ae15249a91ec70c15c6d17, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3603874202803916946, guid: 409a6a6a95ae15249a91ec70c15c6d17, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 905800901399890766}
-    - target: {fileID: 3603874202803916947, guid: 409a6a6a95ae15249a91ec70c15c6d17, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3603874202803916947, guid: 409a6a6a95ae15249a91ec70c15c6d17, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3603874202803916947, guid: 409a6a6a95ae15249a91ec70c15c6d17, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3603874203163605969, guid: 409a6a6a95ae15249a91ec70c15c6d17, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -435,10 +421,6 @@ PrefabInstance:
     - target: {fileID: 3603874203631194337, guid: 409a6a6a95ae15249a91ec70c15c6d17, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 3603874203631194339, guid: 409a6a6a95ae15249a91ec70c15c6d17, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3603874203631194365, guid: 409a6a6a95ae15249a91ec70c15c6d17, type: 3}
       propertyPath: m_Pivot.x

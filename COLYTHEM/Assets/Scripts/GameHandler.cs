@@ -10,35 +10,47 @@ public class GameHandler : MonoBehaviour {
     public int color;
     public int lives;
     public bool isEnd = true;
+    [SerializeField]
+    private Sprite [] _liveSprites;
+    [SerializeField]
+    private Image _livesImage;
 
     void Start () {
-        UpdateLives();
+        UpdateLives(lives);
         // if (isEnd){
         //     Cursor.lockState = CursorLockMode.None;
         //     Cursor.visible = true;
         // }
     }
 
-    void FixedUpdate () {
-        if ((lives <= 0) && (isEnd == false)){
-            // SceneManager.LoadScene ("GameOver");
-        }
+    void Update () {
+        UpdateLives(lives);
     }
 
-    public void AddLives (int nLives) {
-        lives += nLives;
-        UpdateLives();  
+    public void UpdateLives (int currlives) {
+        _livesImage.sprite = _liveSprites[currlives];
     }
 
-    public void RemoveLives (int nLives) {
-        lives += nLives;
-        UpdateLives();  
+    public void damage () {
+        lives--;
+        UpdateLives(lives);
     }
 
-    void UpdateLives () {
-        // Text scoreTextB = textGameObject.GetComponent<Text>();
-        // scoreTextB.text = "Lives: " + lives;
-    }
+    // void FixedUpdate () {
+    //     if ((lives <= 0) && (isEnd == false)){
+    //         // SceneManager.LoadScene ("GameOver");
+    //     }
+    // }
+
+    // public void AddLives (int nLives) {
+    //     lives += nLives;
+    //     UpdateLives();  
+    // }
+
+    // public void RemoveLives (int nLives) {
+    //     lives += nLives;
+    //     UpdateLives();  
+    // }
 
     public void QuitGame() {
         #if UNITY_EDITOR
@@ -48,8 +60,8 @@ public class GameHandler : MonoBehaviour {
         #endif
     }
 
-    public void playerGetHit(int damage) {
-        // check color of projectile vs color of player
-        // if different, update player health with damage
-    }
+    // public void playerGetHit(int damage) {
+    //     // check color of projectile vs color of player
+    //     // if different, update player health with damage
+    // }
 }
