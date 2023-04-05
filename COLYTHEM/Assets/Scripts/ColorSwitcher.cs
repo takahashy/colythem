@@ -1,8 +1,11 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class ColorSwitcher : MonoBehaviour
 {
     private  SpriteRenderer spriteRenderer;
+    public int LocalColor = GameHandler.color;
 
     void Start()
     {
@@ -11,20 +14,21 @@ public class ColorSwitcher : MonoBehaviour
 
     void Update()
     {
+        LocalColor = GameHandler.color; 
         // Press 'r' to switch to red
-        if (Input.GetKeyDown(KeyCode.R)) {
+        if (LocalColor == 1) {
             var darkred = Color.red * 0.5f;
             spriteRenderer.color = darkred;
         }
 
         // Press 'b' to switch to blue
-        else if (Input.GetKeyDown(KeyCode.B))
+        else if (LocalColor == 2)
         {
             spriteRenderer.color = Color.white;
         }
 
         // Press 'space' to switch to white
-        else if (Input.GetKeyDown(KeyCode.Space))
+        else if (LocalColor == 3)
         {
             spriteRenderer.color = Color.clear;
         }

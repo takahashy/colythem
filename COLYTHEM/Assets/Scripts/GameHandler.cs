@@ -7,28 +7,42 @@ using TMPro;
 
 public class GameHandler : MonoBehaviour {
     public GameObject textGameObject;
-    public int color;
+    public static int color;
     public int lives;
-    public bool isEnd = true;
     [SerializeField]
     private Sprite [] _liveSprites;
     [SerializeField]
     private Image _livesImage;
+    
+    // Alex stuff for volume control of individual instruments
+    //public AudioSource play;
 
     void Start () {
         UpdateLives(lives);
-        // if (isEnd){
-        //     Cursor.lockState = CursorLockMode.None;
-        //     Cursor.visible = true;
-        // }
     }
 
     void Update () {
         UpdateLives(lives);
+        // Press 'r' to switch to red
+        if (Input.GetKeyDown(KeyCode.R)) {
+            color = 1;
+        }
+
+        // Press 'b' to switch to blue
+        else if (Input.GetKeyDown(KeyCode.B))
+        {
+            color = 2;
+        }
+
+        // Press 'space' to switch to white
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            color = 3;
+        }
     }
 
     public void UpdateLives (int currlives) {
-        _livesImage.sprite = _liveSprites[currlives];
+        //_livesImage.sprite = _liveSprites[currlives];
     }
 
     public void damage () {
