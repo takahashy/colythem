@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8985971286732357225}
+  - component: {fileID: 905800901399890764}
+  - component: {fileID: 905800901399890766}
   m_Layer: 0
   m_Name: GameHandler
   m_TagString: GameController
@@ -31,3 +33,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &905800901399890764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202196697025638026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33463af12d434ea458071d0215a3bba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textGameObject: {fileID: 0}
+  color: 0
+  lives: 3
+  isEnd: 0
+  _liveSprites: []
+  _livesImage: {fileID: 0}
+--- !u!114 &905800901399890766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202196697025638026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00993cd7f3051754aa68fed1c5a6efe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playUI: {fileID: 0}
+  pauseUI: {fileID: 0}
+  mixer: {fileID: 24100000, guid: bcb29a4e9c2f53f49a779586de4b07d9, type: 2}
