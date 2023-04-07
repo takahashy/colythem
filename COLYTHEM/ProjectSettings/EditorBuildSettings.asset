@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Red_Scene.unity
     guid: 21a70043c09544ed8a09b63b9a272fb0
+  - enabled: 1
+    path: Assets/Scenes/Tutorial (Nick).unity
+    guid: 5dccd1bded2a24bd9b5be18d0197b4e9
   m_configObjects: {}

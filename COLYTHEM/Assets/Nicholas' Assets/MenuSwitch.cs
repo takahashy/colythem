@@ -26,8 +26,8 @@ public class MenuSwitch : MonoBehaviour
     
     public void SetLevel (float sliderValue)
     {
-        mixer.SetFloat("Volume", Mathf.Log10 (sliderValue) * 20);
-        volumeLevel = sliderValue;
+        // mixer.SetFloat("Volume", Mathf.Log10 (sliderValue) * 20);
+        // volumeLevel = sliderValue;
     }
 
     // Update is called once per frame
@@ -54,7 +54,7 @@ public class MenuSwitch : MonoBehaviour
     public void NewGame()
     {
         Debug.Log("New Scene!");
-        SceneManager.LoadScene("Red_Scene");
+        SceneManager.LoadScene("Tutorial (Nick)");
     }
     
     public void fullScreen()
