@@ -17,7 +17,7 @@ public class EnemyProjectile : MonoBehaviour {
              playerTrans = GameObject.FindGameObjectWithTag("Player").transform;
              target = new Vector2(playerTrans.position.x, playerTrans.position.y);
 
-             if (gameHandlerObj == null){
+             if (gameHandlerObj != null){
                gameHandlerObj = GameObject.FindWithTag("GameController").GetComponent<GameHandler>();
              }
              StartCoroutine(selfDestruct());
