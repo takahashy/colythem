@@ -26,7 +26,9 @@ public class PlayerMoveAround : MonoBehaviour {
         //anim = gameObject.GetComponentInChildren<Animator>();
         rb2D = transform.GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
-        current_lives = starting_lives;
+
+        // detects collision twice for everytime the projectile hits for some reason
+        current_lives = 6;
     }
 
     void Update(){
@@ -54,6 +56,7 @@ public class PlayerMoveAround : MonoBehaviour {
                     playerTurn();
                 }
         }
+        UpdateLivesText();
     }
 
     void UpdateLivesText()
@@ -67,7 +70,7 @@ public class PlayerMoveAround : MonoBehaviour {
         {
             print("DETECTING COLLISION");
             current_lives--;
-            UpdateLivesText();
+            // UpdateLivesText();
             // UpdateLivesImage();
 
             if (current_lives <= 0)
