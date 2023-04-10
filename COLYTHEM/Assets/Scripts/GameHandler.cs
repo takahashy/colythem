@@ -8,21 +8,17 @@ using TMPro;
 public class GameHandler : MonoBehaviour {
     public GameObject textGameObject;
     public static int color;
-    public int lives;
-    [SerializeField]
-    private Sprite [] _liveSprites;
-    [SerializeField]
-    private Image _livesImage;
+
     
     // Alex stuff for volume control of individual instruments
     //public AudioSource play;
 
     void Start () {
-        UpdateLives(lives);
+        
+
     }
 
     void Update () {
-        UpdateLives(lives);
         // Press 'r' to switch to red
         if (Input.GetKeyDown(KeyCode.R)) {
             color = 1;
@@ -39,16 +35,27 @@ public class GameHandler : MonoBehaviour {
         {
             color = 3;
         }
+        
+        // UpdateLivesText();
+        // UpdateLivesImage();
     }
 
-    public void UpdateLives (int currlives) {
-        //_livesImage.sprite = _liveSprites[currlives];
-    }
+    // public void UpdateLives (int currlives) {
+    //     // _livesImage.sprite = _liveSprites[currlives];
+    // }
 
-    public void damage () {
-        lives--;
-        UpdateLives(lives);
-    }
+    
+
+    
+
+
+    // void UpdateLivesImage()
+    // {
+    //     current_lives = Mathf.Clamp(current_lives, 0, musicNoteSprites.Length - 1);
+        
+    //     // Set the sprite of the livesImage based on the current number of lives
+    //     livesImage.sprite = musicNoteSprites[current_lives];
+    // }
 
     // void FixedUpdate () {
     //     if ((lives <= 0) && (isEnd == false)){

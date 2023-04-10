@@ -6,6 +6,7 @@ TagManager:
   tags:
   - enemyShooter
   - GameHandler
+  - bullet
   layers:
   - Default
   - TransparentFX

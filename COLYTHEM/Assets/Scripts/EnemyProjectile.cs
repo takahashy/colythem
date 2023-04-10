@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyProjectile : MonoBehaviour { 
 
        public GameHandler gameHandlerObj;
-       public int damage =1;
+       public int damage = 1;
        public float speed = 10f;
        private Transform playerTrans;
        private Vector2 target;

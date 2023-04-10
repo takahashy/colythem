@@ -12,6 +12,7 @@ public class EnemyMoveShoot : MonoBehaviour {
        public float startTimeBtwShots = 2;
        public GameObject projectile;
 
+
        private Rigidbody2D rb;
        private Transform player;
        private Vector2 PlayerVect;
@@ -27,6 +28,10 @@ public class EnemyMoveShoot : MonoBehaviour {
        void Start () {
               Physics2D.queriesStartInColliders = false;
               scaleX = gameObject.transform.localScale.x; 
+              projectile.tag = "bullet";
+              BoxCollider2D projectileCollider = projectile.AddComponent<BoxCollider2D>(); // add a BoxCollider2D component to the projectile
+              projectileCollider.isTrigger = false; 
+            //   projectile.AddComponent<Rigidbody2D>();
 
               rb = GetComponent<Rigidbody2D> ();
               player = GameObject.FindGameObjectWithTag("Player").transform;
