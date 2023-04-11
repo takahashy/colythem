@@ -2427,6 +2427,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
+      propertyPath: EnemyLives
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7025295519408220483, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: m_RootOrder
       value: 3

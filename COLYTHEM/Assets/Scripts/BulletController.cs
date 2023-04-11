@@ -22,8 +22,15 @@ public class BulletController : MonoBehaviour
         transform.position = position;
         
     }
+
+    void OnTriggerEnter2D(Collider2D collision){
+              if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "RigidTilemap") {
+                     Destroy (gameObject);
+              }
+       }
+
     IEnumerator DestroyBullet() {
-        yield return new WaitForSeconds (5f);
+        yield return new WaitForSeconds (2f);
         Destroy(gameObject);
     }
 }
