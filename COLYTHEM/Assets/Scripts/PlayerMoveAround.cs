@@ -50,6 +50,13 @@ public class PlayerMoveAround : MonoBehaviour {
                 //     anim.SetBool ("Walk", false);
                 //     WalkSFX.Stop();
                 }
+                if (Input.GetMouseButtonDown(0)) { //mouse left click detected
+                    //ray = Camera.main.ScreenPointToRay(Input.mousePosition)
+                    Attack(true);
+
+                } else {
+                    Attack(false);
+                }
 
                 // Turning. Reverse if input is moving the Player right and Player faces left.
                 if ((hvMove.x <0 && !FaceRight) || (hvMove.x >0 && FaceRight)){
@@ -81,13 +88,23 @@ public class PlayerMoveAround : MonoBehaviour {
         }
     }
 
-    public void UpdateAnimationAndMove(bool moving) {
+    private void UpdateAnimationAndMove(bool moving) {
         if(anim){
                 if (moving) {
                 anim.SetBool("Walk", true);
                 } else {
                 anim.SetBool("Walk", false);
                 }
+        }
+    }
+
+    private void Attack(bool attacking) {
+        if (anim) {
+            if (attacking) {
+                anim.SetBool("Attack", true);
+            } else {
+                anim.SetBool("Attack", false);
+            }
         }
     }
 
