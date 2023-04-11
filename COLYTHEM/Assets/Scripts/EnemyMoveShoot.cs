@@ -29,8 +29,8 @@ public class EnemyMoveShoot : MonoBehaviour {
               Physics2D.queriesStartInColliders = false;
               scaleX = gameObject.transform.localScale.x; 
               projectile.tag = "bullet";
-              BoxCollider2D projectileCollider = projectile.AddComponent<BoxCollider2D>(); // add a BoxCollider2D component to the projectile
-              projectileCollider.isTrigger = false; 
+              // BoxCollider2D projectileCollider = projectile.AddComponent<BoxCollider2D>(); // add a BoxCollider2D component to the projectile
+              // projectileCollider.isTrigger = false; 
             //   projectile.AddComponent<Rigidbody2D>();
 
               rb = GetComponent<Rigidbody2D> ();

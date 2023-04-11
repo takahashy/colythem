@@ -44,9 +44,9 @@ public class GameHandler : MonoBehaviour {
     public void UpdateLives(int current_lives)
     {
         print(current_lives);
-        int index = current_lives / 3;
-        if (index < 0) index = 0;
-        livesImage.sprite = musicNoteSprites[index];
+        // int index = current_lives / 3;
+        // if (index < 0) index = 0;
+        livesImage.sprite = musicNoteSprites[current_lives];
     }
     
 

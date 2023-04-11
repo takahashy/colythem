@@ -16,21 +16,21 @@ public class PlayerMoveAround : MonoBehaviour {
     private Animator anim;
     public bool animate;    
     private GameHandler _gameobject;
-    public int current_lives;
+    public int current_lives = 3;
     
     //for attacking
     public GameObject projectile;
     public float attackRange = 10;
     
     void Start(){
-        BoxCollider2D projectileCollider = projectile.AddComponent<BoxCollider2D>(); // add a BoxCollider2D component to the projectile
-        projectileCollider.isTrigger = false; 
+        // BoxCollider2D projectileCollider = projectile.AddComponent<BoxCollider2D>(); // add a BoxCollider2D component to the projectile
+        // projectileCollider.isTrigger = false; 
         //anim = gameObject.GetComponentInChildren<Animator>();
         rb2D = transform.GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         _gameobject = GameObject.FindWithTag("GameController").GetComponent<GameHandler>();
         // detects collision twice for everytime the projectile hits for some reason
-        current_lives = 12;
+        // current_lives = 3;
     }
 
     void Update(){
@@ -70,8 +70,10 @@ public class PlayerMoveAround : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        print ("recognizes collision");
         if (collision.gameObject.tag == "bullet")
         {
+            print("reached buller, curr lives: " + current_lives);
             current_lives--;
             _gameobject.UpdateLives(current_lives);
 

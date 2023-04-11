@@ -100,6 +100,9 @@ MonoBehaviour:
   startSpeed: 10
   isAlive: 1
   animate: 0
+  current_lives: 0
+  projectile: {fileID: 3543420312289212564, guid: 299f7e1b136b249bb994fc6f4711d28b, type: 3}
+  attackRange: 10
 --- !u!114 &1194172052813251719
 MonoBehaviour:
   m_ObjectHideFlags: 0
