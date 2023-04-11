@@ -42,7 +42,7 @@ public class EnemyProjectile : MonoBehaviour {
                     // gameHandlerObj.playerGetHit(damage); // can't instantiate gameHandler just yet :/
                     print("got hit (after)");
               }
-              if (collision.gameObject.tag != "enemyShooter" && collision.gameObject.tag != "RigidTilemap") {
+              if (collision.gameObject.tag != "enemyShooter" && collision.gameObject.tag != "RigidTilemap" && collision.gameObject.tag != "bullet") {
                      GameObject animEffect = Instantiate (hitEffectAnim, transform.position, Quaternion.identity);
                      // Destroy (animEffect, 0.5f);
                      Destroy (animEffect, 2.0f);
