@@ -101,7 +101,7 @@ public class EnemyMoveShoot : MonoBehaviour {
               // StartCoroutine("HitEnemy");
               //}
               if (collision.gameObject.tag == "Player") {
-                     EnemyLives -= 2;
+                     EnemyLives -= 1;
                      StopCoroutine("HitEnemy");
                      StartCoroutine("HitEnemy");
               }

@@ -44,7 +44,8 @@ public class EnemyProjectile : MonoBehaviour {
               }
               if (collision.gameObject.tag != "enemyShooter" && collision.gameObject.tag != "RigidTilemap") {
                      GameObject animEffect = Instantiate (hitEffectAnim, transform.position, Quaternion.identity);
-                     Destroy (animEffect, 0.5f);
+                     // Destroy (animEffect, 0.5f);
+                     Destroy (animEffect, 2.0f);
                      Destroy (gameObject);
               }
        }
