@@ -8,14 +8,15 @@ using TMPro;
 public class GameHandler : MonoBehaviour {
     public GameObject textGameObject;
     public static int color;
+    public Image livesImage; 
+    public Sprite [] musicNoteSprites;
 
     
     // Alex stuff for volume control of individual instruments
     //public AudioSource play;
 
     void Start () {
-        
-
+        // musicNoteSprites = new Sprite [4];        
     }
 
     void Update () {
@@ -40,22 +41,16 @@ public class GameHandler : MonoBehaviour {
         // UpdateLivesImage();
     }
 
-    // public void UpdateLives (int currlives) {
-    //     // _livesImage.sprite = _liveSprites[currlives];
-    // }
-
+    public void UpdateLives(int current_lives)
+    {
+        print(current_lives);
+        int index = current_lives / 3;
+        if (index < 0) index = 0;
+        livesImage.sprite = musicNoteSprites[index];
+    }
     
 
-    
 
-
-    // void UpdateLivesImage()
-    // {
-    //     current_lives = Mathf.Clamp(current_lives, 0, musicNoteSprites.Length - 1);
-        
-    //     // Set the sprite of the livesImage based on the current number of lives
-    //     livesImage.sprite = musicNoteSprites[current_lives];
-    // }
 
     // void FixedUpdate () {
     //     if ((lives <= 0) && (isEnd == false)){

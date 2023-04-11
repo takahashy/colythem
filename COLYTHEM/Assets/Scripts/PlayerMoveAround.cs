@@ -15,11 +15,8 @@ public class PlayerMoveAround : MonoBehaviour {
     public bool isAlive = true;
     private Animator anim;
     public bool animate;    
+    private GameHandler _gameobject;
     public int current_lives;
-    public int starting_lives = 3;
-    public Image livesImage; 
-    public Text livesText;
-    public Sprite[] musicNoteSprites;
     
     //for attacking
     public GameObject projectile;
@@ -31,9 +28,9 @@ public class PlayerMoveAround : MonoBehaviour {
         //anim = gameObject.GetComponentInChildren<Animator>();
         rb2D = transform.GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
-
+        _gameobject = GameObject.FindWithTag("GameController").GetComponent<GameHandler>();
         // detects collision twice for everytime the projectile hits for some reason
-        current_lives = 6;
+        current_lives = 12;
     }
 
     void Update(){
@@ -69,28 +66,19 @@ public class PlayerMoveAround : MonoBehaviour {
                     playerTurn();
                 }
         }
-        UpdateLivesText();
-    }
-
-    void UpdateLivesText()
-    {
-        print("Lives: " + current_lives.ToString());
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "bullet")
         {
-            print("DETECTING COLLISION");
             current_lives--;
-            // UpdateLivesText();
-            // UpdateLivesImage();
+            _gameobject.UpdateLives(current_lives);
 
             if (current_lives <= 0)
             {
                 SceneManager.LoadScene("End Screen");
             }
-            // print(current_lives);
         }
     }
 
