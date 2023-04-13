@@ -57,6 +57,11 @@ public class MenuSwitch : MonoBehaviour
         SceneManager.LoadScene("Tutorial (Nick)");
     }
     
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("Start Screen");
+    }
+    
     public void fullScreen()
     {
         // Toggle fullscreen
