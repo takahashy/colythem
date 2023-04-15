@@ -2174,6 +2174,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!212 &998208878 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8975077466263963549, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+  m_PrefabInstance: {fileID: 1194172052118056082}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1489431659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,6 +2278,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   camSpeed: 4
+--- !u!212 &1796565034 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1476935314643118401, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+  m_PrefabInstance: {fileID: 1194172052118056082}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &637208961957649483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2385,5 +2395,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2131568318907454478, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+      propertyPath: Red_Field
+      value: 
+      objectReference: {fileID: 998208878}
+    - target: {fileID: 2131568318907454478, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+      propertyPath: Blue_Field
+      value: 
+      objectReference: {fileID: 1796565034}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}

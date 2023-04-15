@@ -46,6 +46,7 @@ public class PauseHandler : MonoBehaviour
 
     public void Resume()
     {
+        Time.timeScale = 1f;
         playUI.SetActive(true);
         pauseUI.SetActive(false);
         paused = false;
@@ -53,6 +54,7 @@ public class PauseHandler : MonoBehaviour
 
     public void Pause()
     {
+        Time.timeScale = 0f;
         playUI.SetActive(false);
         pauseUI.SetActive(true);
         paused = true;

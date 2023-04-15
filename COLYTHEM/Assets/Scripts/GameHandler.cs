@@ -35,12 +35,23 @@ public class GameHandler : MonoBehaviour {
             color = 2;
         }
 
-        // Press 'space' to switch to white
-        else if (Input.GetKeyDown(KeyCode.Space))
+        // Press 'o' to switch to orange
+        else if (Input.GetKeyDown(KeyCode.O))
         {
             color = 3;
         }
-        
+
+        // Press 'g' to switch to green
+        else if (Input.GetKeyDown(KeyCode.G))
+        {
+            color = 4;
+        }
+
+        // Press 'p' to switch to purple
+        else if (Input.GetKeyDown(KeyCode.P))
+        {
+            color = 5;
+        }
 
         // Increment the time elapsed since the last update
         timeElapsed += Time.deltaTime;
@@ -56,7 +67,7 @@ public class GameHandler : MonoBehaviour {
             counter++;
 
             // Do something with the count
-            print("Count: " + beats);
+            // print("Count: " + beats);
         }
     }
 
@@ -68,13 +79,6 @@ public class GameHandler : MonoBehaviour {
         livesImage.sprite = musicNoteSprites[current_lives];
     }
     
-
-    // void FixedUpdate () {
-    //     if ((lives <= 0) && (isEnd == false)){
-    //         // SceneManager.LoadScene ("GameOver");
-    //     }
-    // }
-
     // public void AddLives (int nLives) {
     //     lives += nLives;
     //     UpdateLives();  
