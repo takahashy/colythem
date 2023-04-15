@@ -11,12 +11,15 @@ public class GameHandler : MonoBehaviour {
     public Image livesImage; 
     public Sprite [] musicNoteSprites;
 
+    public int counter = 0;
+    private float timeElapsed = 0.0f;
+
     
     // Alex stuff for volume control of individual instruments
     //public AudioSource play;
 
     void Start () {
-        // musicNoteSprites = new Sprite [4];        
+        
     }
 
     void Update () {
@@ -37,8 +40,22 @@ public class GameHandler : MonoBehaviour {
             color = 3;
         }
         
-        // UpdateLivesText();
-        // UpdateLivesImage();
+
+        // Increment the time elapsed since the last update
+        timeElapsed += Time.deltaTime;
+
+        // Check if one second has passed
+        if (timeElapsed >= 1.0f)
+        {
+            // Reset the time elapsed
+            timeElapsed = 0.0f;
+
+            // Increment the counter
+            counter++;
+
+            // Do something with the count
+            Debug.Log("Count: " + counter);
+        }
     }
 
     public void UpdateLives(int current_lives)
@@ -49,8 +66,6 @@ public class GameHandler : MonoBehaviour {
         livesImage.sprite = musicNoteSprites[current_lives];
     }
     
-
-
 
     // void FixedUpdate () {
     //     if ((lives <= 0) && (isEnd == false)){
