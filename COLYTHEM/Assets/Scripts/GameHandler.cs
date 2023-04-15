@@ -11,7 +11,8 @@ public class GameHandler : MonoBehaviour {
     public Image livesImage; 
     public Sprite [] musicNoteSprites;
 
-    public int counter = 0;
+    private int counter = 0;
+    public int beats = 0;
     private float timeElapsed = 0.0f;
 
     
@@ -51,10 +52,11 @@ public class GameHandler : MonoBehaviour {
             timeElapsed = 0.0f;
 
             // Increment the counter
+            beats = counter % 4 + 1;
             counter++;
 
             // Do something with the count
-            Debug.Log("Count: " + counter);
+            print("Count: " + beats);
         }
     }
 
