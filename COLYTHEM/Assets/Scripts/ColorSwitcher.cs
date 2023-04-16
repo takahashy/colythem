@@ -18,8 +18,15 @@ public class ColorSwitcher : MonoBehaviour
     void Update()
     {
         LocalColor = GameHandler.color; 
+
+        // color switch not on beat
+        if (LocalColor == 0) {
+            Red_Field.enabled = false;
+            Blue_Field.enabled = false;
+        }
+
         // Press 'r' to switch to red
-        if (LocalColor == 1) {
+        else if (LocalColor == 1) {
             Red_Field.enabled = true;
             Blue_Field.enabled = false;
         }

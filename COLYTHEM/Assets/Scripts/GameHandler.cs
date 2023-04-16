@@ -8,6 +8,7 @@ using TMPro;
 public class GameHandler : MonoBehaviour {
     public GameObject textGameObject;
     public static int color;
+    private int prevColor;
     public Image livesImage; 
     public Sprite [] musicNoteSprites;
 
@@ -20,10 +21,11 @@ public class GameHandler : MonoBehaviour {
     //public AudioSource play;
 
     void Start () {
-        
+        counter = counter + 1;
     }
 
     void Update () {
+        prevColor = color;
         // Press 'r' to switch to red
         if (Input.GetKeyDown(KeyCode.R)) {
             color = 1;
@@ -56,18 +58,22 @@ public class GameHandler : MonoBehaviour {
         // Increment the time elapsed since the last update
         timeElapsed += Time.deltaTime;
 
-        // Check if one second has passed
-        if (timeElapsed >= 1.0f)
+        // Check if .25 second has passed
+        if (timeElapsed >= 0.2f)
         {
             // Reset the time elapsed
             timeElapsed = 0.0f;
 
             // Increment the counter
-            beats = counter % 4 + 1;
+            beats = counter % 20;
             counter++;
+        }
 
-            // Do something with the count
-            // print("Count: " + beats);
+        // check if color switching was succesfuly on "beat" with 3/5 beat aceptance
+        if(prevColor != color){
+           if((counter%5) != 0) {
+               color = 0;
+           }
         }
     }
 

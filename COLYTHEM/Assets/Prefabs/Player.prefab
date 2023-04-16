@@ -60,7 +60,6 @@ GameObject:
   - component: {fileID: 1194172052813251715}
   - component: {fileID: 1194172052813251714}
   - component: {fileID: 1194172052813251713}
-  - component: {fileID: 1194172052813251719}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -151,20 +150,6 @@ MonoBehaviour:
   current_lives: 0
   projectile: {fileID: 3543420312289212564, guid: 299f7e1b136b249bb994fc6f4711d28b, type: 3}
   attackRange: 10
---- !u!114 &1194172052813251719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1194172052813251741}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 373fae4ea22cccf4888832403c28b2c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Red_Field: {fileID: 0}
-  Blue_Field: {fileID: 0}
 --- !u!1 &1194172053068920484
 GameObject:
   m_ObjectHideFlags: 0
