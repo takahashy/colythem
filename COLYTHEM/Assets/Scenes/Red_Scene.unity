@@ -2026,7 +2026,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373fae4ea22cccf4888832403c28b2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalColor: 0
+  Red_Field: {fileID: 0}
+  Blue_Field: {fileID: 0}
 --- !u!1 &955062838
 GameObject:
   m_ObjectHideFlags: 0
@@ -2125,7 +2126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373fae4ea22cccf4888832403c28b2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalColor: 0
+  Red_Field: {fileID: 0}
+  Blue_Field: {fileID: 0}
 --- !u!95 &955062842
 Animator:
   serializedVersion: 4
@@ -2367,7 +2369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373fae4ea22cccf4888832403c28b2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LocalColor: 0
+  Red_Field: {fileID: 0}
+  Blue_Field: {fileID: 0}
 --- !u!212 &2138046881
 SpriteRenderer:
   m_ObjectHideFlags: 0
