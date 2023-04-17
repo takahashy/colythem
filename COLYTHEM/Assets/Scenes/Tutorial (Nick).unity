@@ -15882,6 +15882,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1194172052813251713, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+      propertyPath: rb2D
+      value: 
+      objectReference: {fileID: 1508796112}
+    - target: {fileID: 1194172052813251713, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
       propertyPath: projectile
       value: 
       objectReference: {fileID: 3543420312289212564, guid: 299f7e1b136b249bb994fc6f4711d28b, type: 3}
@@ -40155,6 +40159,11 @@ SpriteRenderer:
 --- !u!212 &1430407660 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 8975077466263963549, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+  m_PrefabInstance: {fileID: 600982949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1508796112 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1194172052813251714, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
   m_PrefabInstance: {fileID: 600982949}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1674438792
