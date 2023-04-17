@@ -40788,7 +40788,7 @@ PrefabInstance:
       objectReference: {fileID: 3603874203255724059}
     - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
       propertyPath: beatLength
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8888285568834721200, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
       propertyPath: m_RootOrder

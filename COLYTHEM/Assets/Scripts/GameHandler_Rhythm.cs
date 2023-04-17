@@ -9,7 +9,7 @@ public class GameHandler_Rhythm : MonoBehaviour{
     public GameObject beatThing;
     private Vector3 beatThingScale;
     //public float echoRadius = 5f;
-    public float beatLength = 1f; //this is the length of each beat! lower for faster beats.
+    public float beatLength = 0.5f; //this is the length of each beat! lower for faster beats.
 
     //timer stuff
     public int timer = 0;
