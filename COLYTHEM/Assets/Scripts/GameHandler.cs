@@ -14,8 +14,6 @@ public class GameHandler : MonoBehaviour {
 
     private int counter = 0;
     public int beats = 0;
-    private float timeElapsed = 0.0f;
-
     
     // Alex stuff for volume control of individual instruments
     //public AudioSource play;
@@ -26,15 +24,19 @@ public class GameHandler : MonoBehaviour {
 
     void Update () {
         prevColor = color;
+
+        
         // Press 'r' to switch to red
         if (Input.GetKeyDown(KeyCode.R)) {
-            color = 1;
+            if (GameHandler_Rhythm.canColor){color = 1;}
+            else {color = 0; Debug.Log("You are off-beat, my friend");}
         }
 
         // Press 'b' to switch to blue
         else if (Input.GetKeyDown(KeyCode.B))
         {
-            color = 2;
+            if (GameHandler_Rhythm.canColor){color = 2;}
+            else {color = 0; Debug.Log("You are off-beat, my friend");}
         }
 
         // Press 'o' to switch to orange
@@ -53,27 +55,6 @@ public class GameHandler : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.P))
         {
             color = 5;
-        }
-
-        // Increment the time elapsed since the last update
-        timeElapsed += Time.deltaTime;
-
-        // Check if .25 second has passed
-        if (timeElapsed >= 0.2f)
-        {
-            // Reset the time elapsed
-            timeElapsed = 0.0f;
-
-            // Increment the counter
-            beats = counter % 20;
-            counter++;
-        }
-
-        // check if color switching was succesfuly on "beat" with 3/5 beat aceptance
-        if(prevColor != color){
-           if((counter%5) != 0) {
-               color = 0;
-           }
         }
     }
 
