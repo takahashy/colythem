@@ -27,6 +27,10 @@ public class GameHandler : MonoBehaviour {
     void Update () {
         prevColor = color;
 
+        if (numLives <= 0) {
+            Debug.Log("You died.");
+            SceneManager.LoadScene("End Screen");
+        }
         
         // Press 'r' to switch to red
         if (Input.GetKeyDown(KeyCode.R)) {
