@@ -94,12 +94,13 @@ public class EnemyMoveShoot : MonoBehaviour {
               }
        }
 
-       void OnCollisionEnter2D(Collision2D collision){
+       void OnTriggerEnter2D(Collider2D collision){
               //if (collision.gameObject.tag == "bullet") {
               // EnemyLives -= 1;
               // StopCoroutine("HitEnemy");
               // StartCoroutine("HitEnemy");
               //}
+              print("collided with enemy");
               if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "playerProjectile") {
                      print("hit by " + collision.gameObject.tag);
                      EnemyLives -= 1;

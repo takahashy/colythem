@@ -15704,6 +15704,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1425715693919508922, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425715693919508922, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
@@ -15784,6 +15788,26 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8975077466263963549, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10818322, guid: f491a3b4434b34543ada03bd29e71c88, type: 3}
+    - target: {fileID: 8975077466263963549, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975077466263963549, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975077466263963549, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975077466263963549, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975077466263963549, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
@@ -15805,6 +15829,10 @@ PrefabInstance:
     - target: {fileID: 1715949068597569562, guid: 7c5931a6f04e148a084b3e724f35e6f9, type: 3}
       propertyPath: m_Name
       value: Enemy_FollowShoot (red) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715949068597569565, guid: 7c5931a6f04e148a084b3e724f35e6f9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1715949068597569567, guid: 7c5931a6f04e148a084b3e724f35e6f9, type: 3}
       propertyPath: m_RootOrder
@@ -15872,6 +15900,10 @@ PrefabInstance:
     - target: {fileID: 1715949068597569562, guid: 7c5931a6f04e148a084b3e724f35e6f9, type: 3}
       propertyPath: m_Name
       value: Enemy_FollowShoot (red) (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715949068597569565, guid: 7c5931a6f04e148a084b3e724f35e6f9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1715949068597569567, guid: 7c5931a6f04e148a084b3e724f35e6f9, type: 3}
       propertyPath: m_RootOrder
@@ -40259,6 +40291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_FollowShoot (red) (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1715949068597569565, guid: 7c5931a6f04e148a084b3e724f35e6f9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1715949068597569567, guid: 7c5931a6f04e148a084b3e724f35e6f9, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -40663,6 +40699,10 @@ PrefabInstance:
     - target: {fileID: 1715949068597569562, guid: 7c5931a6f04e148a084b3e724f35e6f9, type: 3}
       propertyPath: m_Name
       value: Enemy_FollowShoot (red)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715949068597569565, guid: 7c5931a6f04e148a084b3e724f35e6f9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1715949068597569567, guid: 7c5931a6f04e148a084b3e724f35e6f9, type: 3}
       propertyPath: m_RootOrder
