@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.0377028, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3842792249644997028}
   - component: {fileID: 5366514306677917966}
   m_Layer: 0
-  m_Name: EnemyProjectile2
+  m_Name: BlueEnemyProjectile
   m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,5 +181,6 @@ MonoBehaviour:
   gameHandlerObj: {fileID: 0}
   damage: 1
   speed: 10
+  color: 98
   hitEffectAnim: {fileID: 4872556942693588564, guid: 1368bfb88ec594257b209487d2879ec1, type: 3}
   SelfDestructTime: 2

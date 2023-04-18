@@ -7,6 +7,7 @@ public class EnemyProjectile : MonoBehaviour {
        public GameHandler gameHandlerObj;
        public int damage = 1;
        public float speed = 10f;
+       public char color = 'r'; // can be 'r', 'b', 'o', 'g', or 'p'
        private Transform playerTrans;
        private Vector2 target;
        public GameObject hitEffectAnim;
@@ -17,7 +18,7 @@ public class EnemyProjectile : MonoBehaviour {
              playerTrans = GameObject.FindGameObjectWithTag("Player").transform;
              target = new Vector2(playerTrans.position.x, playerTrans.position.y);
 
-             if (gameHandlerObj != null){
+             if (gameHandlerObj == null){
                gameHandlerObj = GameObject.FindWithTag("GameController").GetComponent<GameHandler>();
              }
              StartCoroutine(selfDestruct());
@@ -38,9 +39,9 @@ public class EnemyProjectile : MonoBehaviour {
        //if the bullet hits a collider, play the explosion animation, then destroy the effect and the bullet
        void OnTriggerEnter2D(Collider2D collision){
               if (collision.gameObject.tag == "Player") {
-                    print("got hit (before)");
-                    // gameHandlerObj.playerGetHit(damage); // can't instantiate gameHandler just yet :/
-                    print("got hit (after)");
+              //       print("got hit (before)");
+                    gameHandlerObj.playerGetHit(damage, color); // can't instantiate gameHandler just yet :/
+              //       print("got hit (after)");
               }
               if (collision.gameObject.tag != "enemyShooter" && collision.gameObject.tag != "RigidTilemap" && collision.gameObject.tag != "bullet") {
                      GameObject animEffect = Instantiate (hitEffectAnim, transform.position, Quaternion.identity);

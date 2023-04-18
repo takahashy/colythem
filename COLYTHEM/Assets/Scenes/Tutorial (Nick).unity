@@ -426,7 +426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 455746144}
   m_Layer: 0
-  m_Name: Sentries (1)
+  m_Name: StaionarySentries
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -449,7 +449,7 @@ Transform:
   - {fileID: 1014048672}
   - {fileID: 545930228}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &545930227
 PrefabInstance:
@@ -16033,7 +16033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7025295519408220483, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7025295519408220483, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: m_LocalScale.x
@@ -40200,7 +40200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1674438793}
   m_Layer: 0
-  m_Name: Sentries
+  m_Name: ShooterSentries
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40223,7 +40223,7 @@ Transform:
   - {fileID: 260992154}
   - {fileID: 13800512}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1697027734
 GameObject:
@@ -40463,7 +40463,7 @@ PrefabInstance:
     - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
+      objectReference: {fileID: 4366355251345894893, guid: c38a7750e41244195ad2a400a8d41348, type: 3}
     - target: {fileID: 7025295519408220483, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -40631,7 +40631,7 @@ PrefabInstance:
     - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
+      objectReference: {fileID: 4366355251345894893, guid: c38a7750e41244195ad2a400a8d41348, type: 3}
     - target: {fileID: 7025295519408220483, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: m_RootOrder
       value: 1

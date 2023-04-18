@@ -11,9 +11,11 @@ public class GameHandler : MonoBehaviour {
     private int prevColor;
     public Image livesImage; 
     public Sprite [] musicNoteSprites;
+    public int numLives = 4;
 
     private int counter = 0;
     public int beats = 0;
+    private char[] colors = {'n', 'r', 'b', 'o', 'g', 'p'};
     
     // Alex stuff for volume control of individual instruments
     //public AudioSource play;
@@ -84,8 +86,17 @@ public class GameHandler : MonoBehaviour {
         #endif
     }
 
-    // public void playerGetHit(int damage) {
-    //     // check color of projectile vs color of player
-    //     // if different, update player health with damage
-    // }
+    public void playerGetHit(int damage, char projColor) {
+        // print("forcefield color: " + colors[color] + ", projColor: " + projColor);
+        if (colors[color] == projColor) {
+            print("no damage taken, well blocked!");
+        } else {
+            print("get hurt, nerd");
+            // UpdateLives(numLives - 1);
+            numLives--;
+            print("now have " + numLives + " lives");
+        }
+        // check color of projectile vs color of player
+        // if different, update player health with damage
+    }
 }
