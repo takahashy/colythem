@@ -15,8 +15,6 @@ public class PlayerMoveAround : MonoBehaviour {
     public bool isAlive = true;
     private Animator anim;
     public bool animate;    
-    private GameHandler _gameobject;
-    public int current_lives = 3;
     
     //for attacking
     public GameObject projectile;
@@ -28,7 +26,7 @@ public class PlayerMoveAround : MonoBehaviour {
         //anim = gameObject.GetComponentInChildren<Animator>();
         rb2D = transform.GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
-        _gameobject = GameObject.FindWithTag("GameController").GetComponent<GameHandler>();
+        // _gameobject = GameObject.FindWithTag("GameController").GetComponent<GameHandler>();
         // detects collision twice for everytime the projectile hits for some reason
         // current_lives = 3;
     }
@@ -65,22 +63,6 @@ public class PlayerMoveAround : MonoBehaviour {
                 if ((hvMove.x <0 && !FaceRight) || (hvMove.x >0 && FaceRight)){
                     playerTurn();
                 }
-        }
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        print ("recognizes collision");
-        if (collision.gameObject.tag == "bullet")
-        {
-            print("reached buller, curr lives: " + current_lives);
-            current_lives--;
-            _gameobject.UpdateLives(current_lives);
-
-            if (current_lives <= 0)
-            {
-                SceneManager.LoadScene("End Screen");
-            }
         }
     }
 
