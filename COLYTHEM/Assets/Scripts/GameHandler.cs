@@ -11,7 +11,7 @@ public class GameHandler : MonoBehaviour {
     private int prevColor;
     public Image livesImage; 
     public Sprite [] musicNoteSprites;
-    public int numLives = 4;
+    public int numLives = 3;
 
     private int counter = 0;
     public int beats = 0;
@@ -67,10 +67,7 @@ public class GameHandler : MonoBehaviour {
 
     public void UpdateLives(int current_lives)
     {
-        print(numLives);
-        // int index = current_lives / 3;
-        // if (index < 0) index = 0;
-        livesImage.sprite = musicNoteSprites[numLives];
+        livesImage.sprite = musicNoteSprites[current_lives];
     }
     
     // public void AddLives (int nLives) {
