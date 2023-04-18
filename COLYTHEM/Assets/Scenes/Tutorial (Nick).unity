@@ -40822,6 +40822,10 @@ PrefabInstance:
       propertyPath: textGameObject
       value: 
       objectReference: {fileID: 3603874203255724059}
+    - target: {fileID: 7682651120644937657, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: numLives
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
       propertyPath: beatLength
       value: 0.5
