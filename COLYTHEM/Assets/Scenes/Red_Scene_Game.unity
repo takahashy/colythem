@@ -494,7 +494,7 @@ MonoBehaviour:
   stoppingDistance: 4
   retreatDistance: 3
   startTimeBtwShots: 2
-  projectile: {fileID: 146615751992197549, guid: 1686ab32890a84b9c9e3634b3ed0d83d, type: 3}
+  projectile: {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
   EnemyLives: 30
   attackRange: 10
   isAttacking: 0
@@ -2278,11 +2278,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   camSpeed: 4
---- !u!212 &1796565034 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 1476935314643118401, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
-  m_PrefabInstance: {fileID: 1194172052118056082}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &637208961957649483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2402,6 +2397,6 @@ PrefabInstance:
     - target: {fileID: 2131568318907454478, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
       propertyPath: Blue_Field
       value: 
-      objectReference: {fileID: 1796565034}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}

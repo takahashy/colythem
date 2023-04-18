@@ -156,6 +156,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
+    - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: attackRange
       value: 0
       objectReference: {fileID: 0}
@@ -234,6 +238,10 @@ PrefabInstance:
       propertyPath: EnemyLives
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
     - target: {fileID: 7025295519408220483, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -470,6 +478,10 @@ PrefabInstance:
       propertyPath: EnemyLives
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
     - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: attackRange
       value: 0
@@ -16008,6 +16020,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
+    - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: attackRange
       value: 12
       objectReference: {fileID: 0}
@@ -16093,6 +16109,10 @@ PrefabInstance:
       propertyPath: EnemyLives
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
     - target: {fileID: 7025295519408220483, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -16214,6 +16234,10 @@ PrefabInstance:
       propertyPath: EnemyLives
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
     - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: attackRange
       value: 0
@@ -40359,6 +40383,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
+    - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: attackRange
       value: 0
       objectReference: {fileID: 0}
@@ -40432,6 +40460,10 @@ PrefabInstance:
       propertyPath: EnemyLives
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
     - target: {fileID: 7025295519408220483, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -40596,6 +40628,10 @@ PrefabInstance:
       propertyPath: EnemyLives
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7025295519408220482, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
     - target: {fileID: 7025295519408220483, guid: 1d19662e23cb44a9bad4b47506c40c56, type: 3}
       propertyPath: m_RootOrder
       value: 1
