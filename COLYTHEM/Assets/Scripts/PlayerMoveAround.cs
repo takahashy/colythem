@@ -36,35 +36,37 @@ public class PlayerMoveAround : MonoBehaviour {
     void Update(){
         //NOTE: Horizontal axis: [a] / left arrow is -1, [d] / right arrow is 1
         //NOTE: Vertical axis: [w] / up arrow, [s] / down arrow
-        Vector3 hvMove = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
+        
         if (isAlive == true){
-                transform.position = transform.position + hvMove * runSpeed * Time.deltaTime;
+            Vector3 hvMove = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
+            transform.position = transform.position + hvMove * runSpeed * Time.deltaTime;
             //   transform.position = transform.position + hvMove;
-                if (Input.GetKey(KeyCode.Space)) { //mouse left click detected
-                    //ray = Camera.main.ScreenPointToRay(Input.mousePosition)
-                    Attack(true);
-                    FireProjectile();
+            // if (Input.GetKey(KeyCode.Space)) { //mouse left click detected
+            //     //ray = Camera.main.ScreenPointToRay(Input.mousePosition)
+            //     Attack(true);
+            //     FireProjectile();
 
-                } else {
-                    Attack(false);
-                }
+            // } else {
+            //     Attack(false);
+            // }
+            FireProjectile();
 
-                if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)){
-                    UpdateAnimationAndMove(true);
-                //     anim.SetBool ("Walk", true);
-                //     if (!WalkSFX.isPlaying){
-                //           WalkSFX.Play();
-                //     }
-                } else {
-                    UpdateAnimationAndMove(false);
-                //     anim.SetBool ("Walk", false);
-                //     WalkSFX.Stop();
-                }
+            if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)){
+                UpdateAnimationAndMove(true);
+            //     anim.SetBool ("Walk", true);
+            //     if (!WalkSFX.isPlaying){
+            //           WalkSFX.Play();
+            //     }
+            } else {
+                UpdateAnimationAndMove(false);
+            //     anim.SetBool ("Walk", false);
+            //     WalkSFX.Stop();
+            }
 
-                // Turning. Reverse if input is moving the Player right and Player faces left.
-                if ((hvMove.x <0 && !FaceRight) || (hvMove.x >0 && FaceRight)){
-                    playerTurn();
-                }
+            // Turning. Reverse if input is moving the Player right and Player faces left.
+            if ((hvMove.x <0 && !FaceRight) || (hvMove.x >0 && FaceRight)){
+                playerTurn();
+            }
         }
     }
 
@@ -86,11 +88,11 @@ public class PlayerMoveAround : MonoBehaviour {
 
     private void UpdateAnimationAndMove(bool moving) {
         if(anim){
-                if (moving) {
+            if (moving) {
                 anim.SetBool("Walk", true);
-                } else {
+            } else {
                 anim.SetBool("Walk", false);
-                }
+            }
         }
     }
 
@@ -105,15 +107,18 @@ public class PlayerMoveAround : MonoBehaviour {
     }
 
     private void FireProjectile() {
+        Attack(true);
         Vector2 position = transform.position;
 
         if (Input.GetKeyDown(KeyCode.RightArrow)) {
             position.x += .5f;
+            transform.position = transform.position + Vector3.back * runSpeed * Time.deltaTime;
             GameObject go = Instantiate(projectile, position, Quaternion.identity);
             go.GetComponent<BulletController>().xspeed = 0.15f;
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-            position.x -= .5f;
+            position.x -= -.5f;
+            transform.position = transform.position + Vector3.forward * runSpeed * Time.deltaTime;
             GameObject go = Instantiate(projectile, position, Quaternion.identity);
             go.GetComponent<BulletController>().xspeed = -0.15f;
 
@@ -121,14 +126,17 @@ public class PlayerMoveAround : MonoBehaviour {
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow)) {
             position.y += .5f;
+            transform.position = transform.position + Vector3.up * runSpeed * Time.deltaTime;
             GameObject go = Instantiate(projectile, position, Quaternion.identity);
             go.GetComponent<BulletController>().yspeed = 0.15f;
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            position.y -= .5f;
+            position.y -= -.5f;
+            transform.position = transform.position + Vector3.down * runSpeed * Time.deltaTime;
             GameObject go = Instantiate(projectile, position, Quaternion.identity);
             go.GetComponent<BulletController>().yspeed = -0.15f;
         }
+        Attack(false);
     }
 
     private void playerTurn(){
