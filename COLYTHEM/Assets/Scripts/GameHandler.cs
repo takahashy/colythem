@@ -11,7 +11,7 @@ public class GameHandler : MonoBehaviour {
     private int prevColor;
     public Image livesImage; 
     public Sprite [] musicNoteSprites;
-    public int numLives = 3;
+    public int numLives = 4;
 
     private int counter = 0;
     public int beats = 0;
@@ -28,8 +28,6 @@ public class GameHandler : MonoBehaviour {
         prevColor = color;
         UpdateLives(numLives);
 
-        // update the life display of character
-        UpdateLives(numLives);
         if (numLives <= 0) {
             Debug.Log("You died.");
             SceneManager.LoadScene("End Screen");
@@ -69,7 +67,10 @@ public class GameHandler : MonoBehaviour {
 
     public void UpdateLives(int current_lives)
     {
-        livesImage.sprite = musicNoteSprites[current_lives];
+        print(numLives);
+        // int index = current_lives / 3;
+        // if (index < 0) index = 0;
+        livesImage.sprite = musicNoteSprites[numLives];
     }
     
     // public void AddLives (int nLives) {
