@@ -40408,6 +40408,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6593752363184153954, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6593752363184153957, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
       propertyPath: m_Name
       value: MiniBoss
