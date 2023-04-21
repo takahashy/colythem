@@ -12,7 +12,8 @@ public class GameHandler : MonoBehaviour {
     public Image livesImage; 
     public Sprite [] musicNoteSprites;
     public int numLives = 3;
-
+    public int shieldHealth;
+    public bool killedBoss = false;
     private int counter = 0;
     public int beats = 0;
     private char[] colors = {'n', 'r', 'b', 'o', 'g', 'p'};
@@ -33,16 +34,20 @@ public class GameHandler : MonoBehaviour {
             SceneManager.LoadScene("End Screen");
         }
         
+        if (shieldHealth == 0) {
+            color = 0;
+        }
+        
         // Press 'r' to switch to red
         if (Input.GetKeyDown(KeyCode.R)) {
-            if (GameHandler_Rhythm.canColor){color = 1;}
+            if (GameHandler_Rhythm.canColor){color = 1; shieldHealth = 3;}
             else {color = 0; Debug.Log("You are off-beat, my friend");}
         }
 
         // Press 'b' to switch to blue
         else if (Input.GetKeyDown(KeyCode.B))
         {
-            if (GameHandler_Rhythm.canColor){color = 2;}
+            if (GameHandler_Rhythm.canColor){color = 2; shieldHealth = 3;}
             else {color = 0; Debug.Log("You are off-beat, my friend");}
         }
 
@@ -92,6 +97,7 @@ public class GameHandler : MonoBehaviour {
         // print("forcefield color: " + colors[color] + ", projColor: " + projColor);
         if (colors[color] == projColor) {
             print("no damage taken, well blocked!");
+            shieldHealth--;
         } else {
             print("get hurt, nerd");
             // UpdateLives(numLives - 1);
