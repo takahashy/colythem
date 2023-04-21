@@ -107,36 +107,38 @@ public class PlayerMoveAround : MonoBehaviour {
     }
 
     private void FireProjectile() {
-        Attack(true);
-        Vector2 position = transform.position;
+        if (GameHandler_Rhythm.canColor) {
+            Attack(true);
+            Vector2 position = transform.position;
 
-        if (Input.GetKeyDown(KeyCode.RightArrow)) {
-            position.x += .5f;
-            transform.position = transform.position + Vector3.back * runSpeed * Time.deltaTime;
-            GameObject go = Instantiate(projectile, position, Quaternion.identity);
-            go.GetComponent<BulletController>().xspeed = 0.15f;
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-            position.x -= -.5f;
-            transform.position = transform.position + Vector3.forward * runSpeed * Time.deltaTime;
-            GameObject go = Instantiate(projectile, position, Quaternion.identity);
-            go.GetComponent<BulletController>().xspeed = -0.15f;
+            if (Input.GetKeyDown(KeyCode.RightArrow)) {
+                position.x += .5f;
+                transform.position = transform.position + Vector3.back * runSpeed * Time.deltaTime;
+                GameObject go = Instantiate(projectile, position, Quaternion.identity);
+                go.GetComponent<BulletController>().xspeed = 0.15f;
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+                position.x -= -.5f;
+                transform.position = transform.position + Vector3.forward * runSpeed * Time.deltaTime;
+                GameObject go = Instantiate(projectile, position, Quaternion.identity);
+                go.GetComponent<BulletController>().xspeed = -0.15f;
 
 
+            }
+            else if (Input.GetKeyDown(KeyCode.UpArrow)) {
+                position.y += .5f;
+                transform.position = transform.position + Vector3.up * runSpeed * Time.deltaTime;
+                GameObject go = Instantiate(projectile, position, Quaternion.identity);
+                go.GetComponent<BulletController>().yspeed = 0.15f;
+            }
+            else if (Input.GetKeyDown(KeyCode.DownArrow)) {
+                position.y -= -.5f;
+                transform.position = transform.position + Vector3.down * runSpeed * Time.deltaTime;
+                GameObject go = Instantiate(projectile, position, Quaternion.identity);
+                go.GetComponent<BulletController>().yspeed = -0.15f;
+            }
+            Attack(false);
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow)) {
-            position.y += .5f;
-            transform.position = transform.position + Vector3.up * runSpeed * Time.deltaTime;
-            GameObject go = Instantiate(projectile, position, Quaternion.identity);
-            go.GetComponent<BulletController>().yspeed = 0.15f;
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            position.y -= -.5f;
-            transform.position = transform.position + Vector3.down * runSpeed * Time.deltaTime;
-            GameObject go = Instantiate(projectile, position, Quaternion.identity);
-            go.GetComponent<BulletController>().yspeed = -0.15f;
-        }
-        Attack(false);
     }
 
     private void playerTurn(){
