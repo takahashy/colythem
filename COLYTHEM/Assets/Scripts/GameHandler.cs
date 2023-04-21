@@ -13,7 +13,7 @@ public class GameHandler : MonoBehaviour {
     public Sprite [] musicNoteSprites;
     public int numLives = 3;
     public int shieldHealth;
-    public bool killedBoss = false;
+    public bool winCondition = false;
     private int counter = 0;
     public int beats = 0;
     private char[] colors = {'n', 'r', 'b', 'o', 'g', 'p'};
@@ -32,6 +32,10 @@ public class GameHandler : MonoBehaviour {
         if (numLives <= 0) {
             Debug.Log("You died.");
             SceneManager.LoadScene("End Screen");
+        }
+        
+        if (winCondition == true) {
+            SceneManager.LoadScene("Win Scene");
         }
         
         if (shieldHealth == 0) {
