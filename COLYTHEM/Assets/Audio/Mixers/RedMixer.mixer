@@ -17,7 +17,7 @@ AudioMixerController:
   m_UpdateMode: 0
   m_ExposedParameters:
   - guid: f3a154409a0afa44185e612d20e54004
-    name: MyExposedParam
+    name: Redvol
   m_AudioMixerGroupViews:
   - guids:
     - eda4c542a3ae0d14faefb415181bb06f

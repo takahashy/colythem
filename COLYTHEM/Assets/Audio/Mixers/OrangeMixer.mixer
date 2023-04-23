@@ -15,7 +15,9 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 2117f1f46125470408f5ad1b699cfdf4
+    name: Orangevol
   m_AudioMixerGroupViews:
   - guids:
     - cce8e5f5d4c4ce5419727cb72fd55a8b

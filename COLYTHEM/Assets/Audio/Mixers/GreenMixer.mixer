@@ -17,7 +17,7 @@ AudioMixerController:
   m_UpdateMode: 0
   m_ExposedParameters:
   - guid: d95185d1e1d703649bf902ca67b3770f
-    name: MyExposedParam
+    name: Greenvol
   m_AudioMixerGroupViews:
   - guids:
     - 299c73d9ca4aeb74689844337b199721

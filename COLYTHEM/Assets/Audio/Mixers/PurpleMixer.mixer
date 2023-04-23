@@ -15,7 +15,9 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: d3112ba6b9446a646ab87e8878b76f73
+    name: Purplevol
   m_AudioMixerGroupViews:
   - guids:
     - 1a71ec2d543be5647ac8643c576e90dd

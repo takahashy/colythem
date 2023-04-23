@@ -17,7 +17,7 @@ AudioMixerController:
   m_UpdateMode: 0
   m_ExposedParameters:
   - guid: bee1edf09b02a074d81483c3e79223c0
-    name: MyExposedParam
+    name: Bluevol
   m_AudioMixerGroupViews:
   - guids:
     - aaff8264b067354468b50aa53c01b66e

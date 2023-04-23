@@ -15,7 +15,9 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 455fadfaa7552564dbfbd3e190d93d09
+    name: Drumsvol
   m_AudioMixerGroupViews:
   - guids:
     - 92c8b9ff2a7d1fc418b54ecf14e1d042
