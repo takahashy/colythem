@@ -9,6 +9,10 @@ public class ColorSwitcher : MonoBehaviour
     private int LocalColor = GameHandler.color;
     public SpriteRenderer Red_Field;
     public SpriteRenderer Blue_Field;
+    public SpriteRenderer Green_Field;
+    public SpriteRenderer Orange_Field;
+    public SpriteRenderer Purple_Field;
+    public SpriteRenderer Gray_Field;
 
     void Start()
     {
@@ -23,12 +27,20 @@ public class ColorSwitcher : MonoBehaviour
         if (LocalColor == 0) {
             Red_Field.enabled = false;
             Blue_Field.enabled = false;
+            Green_Field.enabled = false;
+            Orange_Field.enabled = false;
+            Purple_Field.enabled = false;
+            Gray_Field.enabled = true;
         }
 
         // Press 'r' to switch to red
         else if (LocalColor == 1) {
             Red_Field.enabled = true;
             Blue_Field.enabled = false;
+            Green_Field.enabled = false;
+            Orange_Field.enabled = false;
+            Purple_Field.enabled = false;
+            Gray_Field.enabled = false;
         }
 
         // Press 'b' to switch to blue
@@ -36,24 +48,43 @@ public class ColorSwitcher : MonoBehaviour
         {
             Red_Field.enabled = false;
             Blue_Field.enabled = true;
+            Green_Field.enabled = false;
+            Orange_Field.enabled = false;
+            Purple_Field.enabled = false;
+            Gray_Field.enabled = false;
         }
 
         // Press 'o' to switch to orange
         else if (LocalColor == 3)
         {
-            //spriteRenderer.color = Color.clear;
+            Red_Field.enabled = false;
+            Blue_Field.enabled = false;
+            Green_Field.enabled = false;
+            Orange_Field.enabled = true;
+            Purple_Field.enabled = false;
+            Gray_Field.enabled = false;
         }
 
         // Press 'g' to switch to g
         else if (LocalColor == 4)
         {
-            //spriteRenderer.color = Color.clear;
+            Red_Field.enabled = false;
+            Blue_Field.enabled = false;
+            Green_Field.enabled = true;
+            Orange_Field.enabled = false;
+            Purple_Field.enabled = false;
+            Gray_Field.enabled = false;
         }
 
-        // Press 'p' to switch to g
+        // Press 'p' to switch to p
         else if (LocalColor == 5)
         {
-            //spriteRenderer.color = Color.clear;
+            Red_Field.enabled = false;
+            Blue_Field.enabled = false;
+            Green_Field.enabled = false;
+            Orange_Field.enabled = false;
+            Purple_Field.enabled = true;
+            Gray_Field.enabled = false;
         }
     }
 }
