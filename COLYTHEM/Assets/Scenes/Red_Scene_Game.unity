@@ -2390,6 +2390,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1194172053068920485, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194172053068920485, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194172053068920490, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1039025897, guid: b8f4c4d4355ab47e98b4b1cc60396a00, type: 3}
     - target: {fileID: 2131568318907454478, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
       propertyPath: Red_Field
       value: 
