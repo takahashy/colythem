@@ -23,14 +23,9 @@ public class PlayerMoveAround : MonoBehaviour {
     public float attackRange = 10;
     
     void Start(){
-        // BoxCollider2D projectileCollider = projectile.AddComponent<BoxCollider2D>(); // add a BoxCollider2D component to the projectile
-        // projectileCollider.isTrigger = false; 
-        //anim = gameObject.GetComponentInChildren<Animator>();
         rb2D = transform.GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         _gameobject = GameObject.FindWithTag("GameController").GetComponent<GameHandler>();
-        // detects collision twice for everytime the projectile hits for some reason
-        // current_lives = 3;
     }
 
     void Update(){
