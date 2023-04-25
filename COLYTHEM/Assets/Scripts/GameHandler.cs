@@ -17,6 +17,7 @@ public class GameHandler : MonoBehaviour {
     private int counter = 0;
     public int beats = 0;
     private char[] colors = {'n', 'r', 'b', 'o', 'g', 'p'};
+    public static bool upgraded = false;
     
     // Alex stuff for volume control of individual instruments
     //public AudioSource play;
@@ -64,7 +65,7 @@ public class GameHandler : MonoBehaviour {
         // Press 'g' to switch to green
         else if (Input.GetKeyDown(KeyCode.G))
         {
-            if (GameHandler_Rhythm.canColor){color = 4; shieldHealth = 3;}
+            if (GameHandler_Rhythm.canColor && upgraded){color = 4; shieldHealth = 3;}
             else {color = 0; Debug.Log("You are off-beat, my friend");}
         }
 

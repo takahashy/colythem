@@ -9,7 +9,7 @@ public class ColorUpgrade : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             // change the player's color
-            print("detecting collision with player");
+            GameHandler.upgraded = true;
             Destroy(gameObject); // destroy the color changer object
         }
     }    
