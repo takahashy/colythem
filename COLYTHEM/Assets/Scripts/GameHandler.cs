@@ -17,6 +17,8 @@ public class GameHandler : MonoBehaviour {
     private int counter = 0;
     public int beats = 0;
     private char[] colors = {'n', 'r', 'b', 'o', 'g', 'p'};
+
+    // keeps track of whether player can use that color shield
     public static bool [] upgraded = {false, false, false};
     
     // Alex stuff for volume control of individual instruments
