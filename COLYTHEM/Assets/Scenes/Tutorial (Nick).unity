@@ -16317,7 +16317,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6ac0be5eb52a84db89fa05a0a6256f9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16358,7 +16358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1298267300}
   sceneTriggerCollider: {fileID: 952462818}
-  sceneToLoad: 
+  sceneToLoad: WaterMap
 --- !u!1 &993098665
 GameObject:
   m_ObjectHideFlags: 0
