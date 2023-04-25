@@ -25,15 +25,14 @@ public class BulletController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         int randomValue = Random.Range(0, 14);
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteList[randomValue];
         StartCoroutine(DestroyBullet());
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        int randomValue = Random.Range(0, 14);
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = spriteList[randomValue];
         Vector2 position = transform.position;
         position.x += xspeed;
         position.y += yspeed;
