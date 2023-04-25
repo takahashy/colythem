@@ -12,8 +12,17 @@ public class AudioController : MonoBehaviour
     public AudioMixer OrangeMixer;
     public AudioMixer BlueMixer;
     public AudioMixer RedMixer;
-    public AudioMixer Purplemixer;
+    public AudioMixer PurpleMixer;
 
+
+    void Start() {
+        StartCoroutine(FadeMixerGroup.StartFade(RedMixer, "Redvol", 0.001f, 0.001f));
+        StartCoroutine(FadeMixerGroup.StartFade(BlueMixer, "Bluevol", 0.001f, 0.001f));
+        StartCoroutine(FadeMixerGroup.StartFade(GreenMixer, "Greenvol", 0.001f, 0.001f));
+        StartCoroutine(FadeMixerGroup.StartFade(OrangeMixer, "Orangevol", 0.001f, 0.001f));
+        StartCoroutine(FadeMixerGroup.StartFade(PurpleMixer, "Purplevol", 0.001f, 0.001f));
+    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -22,38 +31,30 @@ public class AudioController : MonoBehaviour
         
         // color switch not on beat
         if (LocalColor == 0) {
-            // StartCoroutine(FadeMixerGroup.StartFade(RedMixer, "Redvol", 1f, 0.001f));
-            // Red_Field.enabled = false;
-            // Blue_Field.enabled = false;
-            // Green_Field.enabled = false;
-            // Orange_Field.enabled = false;
-            // Purple_Field.enabled = false;
-            // Gray_Field.enabled = true;
+            StartCoroutine(FadeMixerGroup.StartFade(RedMixer, "Redvol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(BlueMixer, "Bluevol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(GreenMixer, "Greenvol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(OrangeMixer, "Orangevol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(PurpleMixer, "Purplevol", 4f, 0.001f));
         }
 
         // Press 'r' to switch to red
         else if (LocalColor == 1) {
-            StartCoroutine(FadeMixerGroup.StartFade(RedMixer, "Redvol", 1f, 1f));
-            StartCoroutine(FadeMixerGroup.StartFade(BlueMixer, "Bluevol", 1f, 0.001f));
-            // Red_Field.enabled = true;
-            // Blue_Field.enabled = false;
-            // Green_Field.enabled = false;
-            // Orange_Field.enabled = false;
-            // Purple_Field.enabled = false;
-            // Gray_Field.enabled = false;
+            StartCoroutine(FadeMixerGroup.StartFade(RedMixer, "Redvol", 4f, 1f));
+            StartCoroutine(FadeMixerGroup.StartFade(BlueMixer, "Bluevol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(GreenMixer, "Greenvol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(OrangeMixer, "Orangevol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(PurpleMixer, "Purplevol", 4f, 0.001f));
         }
 
         // Press 'b' to switch to blue
         else if (LocalColor == 2)
         {
-            StartCoroutine(FadeMixerGroup.StartFade(RedMixer, "Redvol", 1f, 0.001f));
-            StartCoroutine(FadeMixerGroup.StartFade(BlueMixer, "Bluevol", 1f, 1f));
-            // Red_Field.enabled = false;
-            // Blue_Field.enabled = true;
-            // Green_Field.enabled = false;
-            // Orange_Field.enabled = false;
-            // Purple_Field.enabled = false;
-            // Gray_Field.enabled = false;
+            StartCoroutine(FadeMixerGroup.StartFade(RedMixer, "Redvol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(BlueMixer, "Bluevol", 4f, 1f));
+            StartCoroutine(FadeMixerGroup.StartFade(GreenMixer, "Greenvol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(OrangeMixer, "Orangevol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(PurpleMixer, "Purplevol", 4f, 0.001f));
         }
 
         // // Press 'o' to switch to orange

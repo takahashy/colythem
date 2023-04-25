@@ -20,9 +20,6 @@ public class GameHandler : MonoBehaviour {
 
     // keeps track of whether player can use that color shield
     public static bool [] upgraded = {false, false, false};
-    
-    // Alex stuff for volume control of individual instruments
-    //public AudioSource play;
 
     void Start () {
         counter = counter + 1;

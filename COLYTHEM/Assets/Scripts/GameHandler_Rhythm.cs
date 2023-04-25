@@ -28,7 +28,7 @@ public class GameHandler_Rhythm : MonoBehaviour{
     void FixedUpdate(){
         theTimer += 0.01f;
         
-        if (theTimer >= (beatLength * 0.65f)){
+        if (theTimer >= (beatLength * 0.6f)){
             canColor=true;
         }
 
@@ -43,7 +43,7 @@ public class GameHandler_Rhythm : MonoBehaviour{
         //temporary big and small code. Fix the better pulse code below
         beatThing.transform.localScale = new Vector3(beatThingScale.x *2, beatThingScale.y *2, beatThingScale.z);
         canColor=true;
-        yield return new WaitForSeconds(beatLength * 0.35f);
+        yield return new WaitForSeconds(beatLength * 0.6f);
         beatThing.transform.localScale = new Vector3(beatThingScale.x, beatThingScale.y, beatThingScale.z);
         canColor=false;
 

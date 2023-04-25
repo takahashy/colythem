@@ -471,6 +471,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 637208961249378613, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+      propertyPath: Mute
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 637208961249378613, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_Volume
       value: 1
       objectReference: {fileID: 0}
@@ -536,11 +540,11 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 203a88a96309bb44f8c0e041542478c0, type: 3}
     - target: {fileID: 637208962179719729, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: Mute
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 637208962179719729, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_Volume
-      value: 1
+      value: 0.295
       objectReference: {fileID: 0}
     - target: {fileID: 637208962179719729, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_audioClip
@@ -548,11 +552,11 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 6065ad4e3ac3e5d4b9bd6344d9d6c6ce, type: 3}
     - target: {fileID: 637208962179719729, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 637208962192772664, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: Mute
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 637208962192772664, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_Volume
@@ -564,7 +568,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: c9f2375a7827c46499590cf2f0b4f783, type: 3}
     - target: {fileID: 637208962192772664, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 637208962267704701, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_Volume
@@ -574,6 +578,10 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 30302d086730d084081a5181a9628f5f, type: 3}
+    - target: {fileID: 637208962519259391, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+      propertyPath: Mute
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 637208962519259391, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_Volume
       value: 1
@@ -602,6 +610,30 @@ PrefabInstance:
       propertyPath: BlueMixer
       value: 
       objectReference: {fileID: 24100000, guid: 66f6da83ec3e8b3458e163d80be5c29c, type: 2}
+    - target: {fileID: 958808471781771770, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+      propertyPath: DrumsMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 7ab1bde48acf05d4fb19b342a28217f7, type: 2}
+    - target: {fileID: 958808471781771770, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+      propertyPath: GreenMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: fa39d8fe7ced5194c9f002d169c85e57, type: 2}
+    - target: {fileID: 958808471781771770, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+      propertyPath: GuitarMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 26424033aeb0f3b4b8df707817f96024, type: 2}
+    - target: {fileID: 958808471781771770, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+      propertyPath: OrangeMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: f9f0975b983a99d49a0aa2d72dadb98c, type: 2}
+    - target: {fileID: 958808471781771770, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+      propertyPath: PurpleMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: f8e843742d923a941a062798ab53be8a, type: 2}
+    - target: {fileID: 958808471781771770, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+      propertyPath: Purplemixer
+      value: 
+      objectReference: {fileID: 24100000, guid: f8e843742d923a941a062798ab53be8a, type: 2}
     - target: {fileID: 2556661404923758521, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: Mute
       value: 0
@@ -612,7 +644,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 741c48a5ccc037d479d39f17681b0e6a, type: 3}
     - target: {fileID: 2556661404923758521, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2556661404923758521, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: OutputAudioMixerGroup
@@ -41039,7 +41071,7 @@ PrefabInstance:
       objectReference: {fileID: 3603874203255724061}
     - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
       propertyPath: beatLength
-      value: 0.44
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 8888285568834721200, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
       propertyPath: m_RootOrder
