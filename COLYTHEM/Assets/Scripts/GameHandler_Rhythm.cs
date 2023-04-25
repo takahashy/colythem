@@ -9,7 +9,7 @@ public class GameHandler_Rhythm : MonoBehaviour{
     public GameObject beatThing;
     private Vector3 beatThingScale;
     //public float echoRadius = 5f;
-    public float beatLength = 0.5f; //this is the length of each beat! lower for faster beats.
+    public float beatLength = 0.45f; //this is the length of each beat! lower for faster bpm
 
     //timer stuff
     public int timer = 0;
@@ -28,7 +28,7 @@ public class GameHandler_Rhythm : MonoBehaviour{
     void FixedUpdate(){
         theTimer += 0.01f;
         
-        if (theTimer >= (beatLength * 0.7f)){
+        if (theTimer >= (beatLength * 0.65f)){
             canColor=true;
         }
 
@@ -43,7 +43,7 @@ public class GameHandler_Rhythm : MonoBehaviour{
         //temporary big and small code. Fix the better pulse code below
         beatThing.transform.localScale = new Vector3(beatThingScale.x *2, beatThingScale.y *2, beatThingScale.z);
         canColor=true;
-        yield return new WaitForSeconds(beatLength * 0.3f);
+        yield return new WaitForSeconds(beatLength * 0.35f);
         beatThing.transform.localScale = new Vector3(beatThingScale.x, beatThingScale.y, beatThingScale.z);
         canColor=false;
 
