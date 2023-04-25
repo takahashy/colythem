@@ -64,7 +64,8 @@ public class GameHandler : MonoBehaviour {
         // Press 'g' to switch to green
         else if (Input.GetKeyDown(KeyCode.G))
         {
-            color = 4;
+            if (GameHandler_Rhythm.canColor){color = 4; shieldHealth = 3;}
+            else {color = 0; Debug.Log("You are off-beat, my friend");}
         }
 
         // Press 'p' to switch to purple
