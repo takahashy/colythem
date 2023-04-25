@@ -19,7 +19,7 @@ public class NextLevel : MonoBehaviour
         {
             // Load the scene when collision occurs
             Debug.Log("testing");
-            // SceneManager.LoadScene(sceneToLoad);
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }

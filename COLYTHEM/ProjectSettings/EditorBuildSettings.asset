@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win Scene.unity
     guid: 154dff8a314114dcabbb00077be29f2d
+  - enabled: 1
+    path: Assets/Scenes/WaterMap.unity
+    guid: 49d1962c0d1e545f7ab476f11f214f37
   m_configObjects: {}
