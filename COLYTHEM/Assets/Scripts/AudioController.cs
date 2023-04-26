@@ -13,48 +13,65 @@ public class AudioController : MonoBehaviour
     public AudioMixer BlueMixer;
     public AudioMixer RedMixer;
     public AudioMixer PurpleMixer;
+    float red,blue;
 
+
+    private float beatLength = 1f;
+
+    //timer stuff
+    private float theTimer = 0f;
 
     void Start() {
-        StartCoroutine(FadeMixerGroup.StartFade(RedMixer, "Redvol", 0.001f, 0.001f));
-        StartCoroutine(FadeMixerGroup.StartFade(BlueMixer, "Bluevol", 0.001f, 0.001f));
-        StartCoroutine(FadeMixerGroup.StartFade(GreenMixer, "Greenvol", 0.001f, 0.001f));
-        StartCoroutine(FadeMixerGroup.StartFade(OrangeMixer, "Orangevol", 0.001f, 0.001f));
-        StartCoroutine(FadeMixerGroup.StartFade(PurpleMixer, "Purplevol", 0.001f, 0.001f));
+        RedMixer.SetFloat("Redvol", -79f);
+        BlueMixer.SetFloat("Bluevol", -79f);
     }
     
     // Update is called once per frame
-    void Update()
+    void FixedUpdate(){
+        theTimer += 0.01f;
+        if (theTimer >= beatLength){
+            theTimer = 0;
+            Fading();
+        }
+        RedMixer.GetFloat("Redvol", out red);
+        BlueMixer.GetFloat("Bluevol", out blue);
+        Debug.Log("Red: " + red);
+        Debug.Log("Blue " + blue);
+        Debug.Log("Color: "+ GameHandler.color);
+    }
+
+    // Update is called once per frame
+    void Fading()
     {
         LocalColor = GameHandler.color; 
         //StartCoroutine(FadeMixerGroup.StartFade(AudioMixer audioMixer, String exposedParameter, float duration, float targetVolume));
         
         // color switch not on beat
         if (LocalColor == 0) {
-            StartCoroutine(FadeMixerGroup.StartFade(RedMixer, "Redvol", 4f, 0.001f));
-            StartCoroutine(FadeMixerGroup.StartFade(BlueMixer, "Bluevol", 4f, 0.001f));
-            StartCoroutine(FadeMixerGroup.StartFade(GreenMixer, "Greenvol", 4f, 0.001f));
-            StartCoroutine(FadeMixerGroup.StartFade(OrangeMixer, "Orangevol", 4f, 0.001f));
-            StartCoroutine(FadeMixerGroup.StartFade(PurpleMixer, "Purplevol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(gameObject, RedMixer, "Redvol", 0.2f, -79f));
+            StartCoroutine(FadeMixerGroup.StartFade(gameObject, BlueMixer, "Bluevol", 0.2f, -79f));
+            // StartCoroutine(FadeMixerGroup.StartFade(gameObject, GreenMixer, "Greenvol", 0.2f, -79f));
+            // StartCoroutine(FadeMixerGroup.StartFade(gameObject, OrangeMixer, "Orangevol", 0.2f, -79f));
+            // StartCoroutine(FadeMixerGroup.StartFade(gameObject, PurpleMixer, "Purplevol", 0.2f, -79f));
         }
 
         // Press 'r' to switch to red
         else if (LocalColor == 1) {
-            StartCoroutine(FadeMixerGroup.StartFade(RedMixer, "Redvol", 4f, 1f));
-            StartCoroutine(FadeMixerGroup.StartFade(BlueMixer, "Bluevol", 4f, 0.001f));
-            StartCoroutine(FadeMixerGroup.StartFade(GreenMixer, "Greenvol", 4f, 0.001f));
-            StartCoroutine(FadeMixerGroup.StartFade(OrangeMixer, "Orangevol", 4f, 0.001f));
-            StartCoroutine(FadeMixerGroup.StartFade(PurpleMixer, "Purplevol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(gameObject, RedMixer, "Redvol", 0.2f, 1f));
+            StartCoroutine(FadeMixerGroup.StartFade(gameObject, BlueMixer, "Bluevol", 0.2f, -79f));
+            // StartCoroutine(FadeMixerGroup.StartFade(gameObject, GreenMixer, "Greenvol", 0.2f, -79f));
+            // StartCoroutine(FadeMixerGroup.StartFade(gameObject, OrangeMixer, "Orangevol", 0.2f, -79f));
+            // StartCoroutine(FadeMixerGroup.StartFade(gameObject, PurpleMixer, "Purplevol", 0.2f, -79f));
         }
 
         // Press 'b' to switch to blue
         else if (LocalColor == 2)
         {
-            StartCoroutine(FadeMixerGroup.StartFade(RedMixer, "Redvol", 4f, 0.001f));
-            StartCoroutine(FadeMixerGroup.StartFade(BlueMixer, "Bluevol", 4f, 1f));
-            StartCoroutine(FadeMixerGroup.StartFade(GreenMixer, "Greenvol", 4f, 0.001f));
-            StartCoroutine(FadeMixerGroup.StartFade(OrangeMixer, "Orangevol", 4f, 0.001f));
-            StartCoroutine(FadeMixerGroup.StartFade(PurpleMixer, "Purplevol", 4f, 0.001f));
+            StartCoroutine(FadeMixerGroup.StartFade(gameObject, RedMixer, "Redvol", 0.2f, -79f));
+            StartCoroutine(FadeMixerGroup.StartFade(gameObject, BlueMixer, "Bluevol", 0.2f, 1f));
+            // StartCoroutine(FadeMixerGroup.StartFade(gameObject, GreenMixer, "Greenvol", 0.2f, -79f));
+            // StartCoroutine(FadeMixerGroup.StartFade(gameObject, OrangeMixer, "Orangevol", 0.2f, -79f));
+            // StartCoroutine(FadeMixerGroup.StartFade(gameObject, PurpleMixer, "Purplevol", 0.2f, -79f));
         }
 
         // // Press 'o' to switch to orange
