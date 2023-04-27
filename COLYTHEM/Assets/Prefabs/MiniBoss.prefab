@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6593752363184153955}
   - component: {fileID: 6593752363184153954}
   - component: {fileID: 6593752363184153953}
+  - component: {fileID: 2109312292}
   m_Layer: 6
   m_Name: MiniBoss
   m_TagString: enemyShooter
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6593752363184153957}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 88.4, y: -0.08, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
@@ -66,7 +67,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -102,6 +103,19 @@ MonoBehaviour:
   EnemyLives: 20
   attackRange: 12
   isAttacking: 0
+--- !u!114 &2109312292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6593752363184153957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1d34dcbe11a3e4b8f37f08aeb44c28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorupgrade: {fileID: 0}
 --- !u!1 &7961171132151175200
 GameObject:
   m_ObjectHideFlags: 0
