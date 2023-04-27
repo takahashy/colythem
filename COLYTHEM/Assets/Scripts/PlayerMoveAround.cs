@@ -65,22 +65,6 @@ public class PlayerMoveAround : MonoBehaviour {
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        print ("recognizes collision");
-        if (collision.gameObject.tag == "bullet")
-        {
-            print("reached buller, curr lives: " + current_lives);
-            current_lives--;
-            _gameobject.UpdateLives(current_lives);
-
-            if (current_lives <= 0)
-            {
-                SceneManager.LoadScene("End Screen");
-            }
-        }
-    }
-
     private void UpdateAnimationAndMove(bool moving) {
         if(anim){
             if (moving) {

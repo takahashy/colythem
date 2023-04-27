@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class ColorSwitcher : MonoBehaviour
 {
-    // private  SpriteRenderer spriteRenderer;
+    public SpriteRenderer Sprite;
     private int LocalColor = GameHandler.color;
     public SpriteRenderer Red_Field;
     public SpriteRenderer Blue_Field;
@@ -86,5 +86,11 @@ public class ColorSwitcher : MonoBehaviour
             Purple_Field.enabled = true;
             Gray_Field.enabled = false;
         }
+    }
+
+    public void scale()
+    {
+        Sprite = GetComponent<SpriteRenderer>();
+        Sprite.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
     }
 }

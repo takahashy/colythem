@@ -20,9 +20,12 @@ public class GameHandler : MonoBehaviour {
 
     // keeps track of whether player can use that color shield
     public static bool [] upgraded = {false, false, false};
+    private SpriteRenderer Sprite;
+    private GameObject shield;
 
     void Start () {
-        counter = counter + 1;
+        counter += 1;
+        shield = GameObject.Find("Gray_forcefield");        
     }
 
     void Update () {
@@ -44,37 +47,64 @@ public class GameHandler : MonoBehaviour {
         
         // Press 'r' to switch to red
         if (Input.GetKeyDown(KeyCode.R)) {
-            if (GameHandler_Rhythm.canColor){color = 1; shieldHealth = 3;}
-            else {color = 0; Debug.Log("You are off-beat, my friend");}
+            if (GameHandler_Rhythm.canColor){
+                color = 1;
+                shieldHealth = 3;
+                GetShieldSprite("Red_forcefield");
+            } else {
+                color = 0; Debug.Log("You are off-beat, my friend");
+            }
         }
 
         // Press 'b' to switch to blue
         else if (Input.GetKeyDown(KeyCode.B))
         {
-            if (GameHandler_Rhythm.canColor){color = 2; shieldHealth = 3;}
-            else {color = 0; Debug.Log("You are off-beat, my friend");}
+            if (GameHandler_Rhythm.canColor){
+                color = 2;
+                shieldHealth = 3;
+                GetShieldSprite("Blue_forcefield");
+            } else {
+                color = 0; Debug.Log("You are off-beat, my friend");
+            }
         }
 
         // Press 'o' to switch to orange
         else if (Input.GetKeyDown(KeyCode.O))
         {
-            if (GameHandler_Rhythm.canColor && upgraded[0]){color = 3; shieldHealth = 3;}
-            else {color = 0; Debug.Log("You are off-beat, my friend");}
+            if (GameHandler_Rhythm.canColor && upgraded[0]){
+                color = 3;
+                shieldHealth = 3;
+                GetShieldSprite("Orange_forcefield");
+            } else {
+                color = 0; Debug.Log("You are off-beat, my friend");
+            }
         }
 
         // Press 'g' to switch to green
         else if (Input.GetKeyDown(KeyCode.G))
         {
-            if (GameHandler_Rhythm.canColor && upgraded[1]){color = 4; shieldHealth = 3;}
-            else {color = 0; Debug.Log("You are off-beat, my friend");}
+            if (GameHandler_Rhythm.canColor && upgraded[1]){
+                color = 4;
+                shieldHealth = 3;
+                GetShieldSprite("Green_forcefield");
+
+            } else {
+                color = 0; Debug.Log("You are off-beat, my friend");
+            }
         }
 
         // Press 'p' to switch to purple
         else if (Input.GetKeyDown(KeyCode.P))
         {
-            if (GameHandler_Rhythm.canColor && upgraded[2]){color = 5; shieldHealth = 3;}
-            else {color = 0; Debug.Log("You are off-beat, my friend");}
+            if (GameHandler_Rhythm.canColor && upgraded[2]){
+                color = 5;
+                shieldHealth = 3;
+                GetShieldSprite("Purple_forcefield");
+            } else {
+                color = 0; Debug.Log("You are off-beat, my friend");
+            }
         }
+        Sprite = shield.GetComponent<SpriteRenderer>();
     }
 
     public void UpdateLives(int current_lives)
@@ -82,15 +112,12 @@ public class GameHandler : MonoBehaviour {
         livesImage.sprite = musicNoteSprites[current_lives];
     }
     
-    // public void AddLives (int nLives) {
-    //     lives += nLives;
-    //     UpdateLives();  
-    // }
-
-    // public void RemoveLives (int nLives) {
-    //     lives += nLives;
-    //     UpdateLives();  
-    // }
+    private void GetShieldSprite(string colorfield) 
+    {
+        shield = GameObject.Find(colorfield);
+        Sprite = shield.GetComponent<SpriteRenderer>();
+        Sprite.transform.localScale = new Vector3(1f, 1f, 1f);
+    }
 
     public void QuitGame() {
         #if UNITY_EDITOR
@@ -105,9 +132,8 @@ public class GameHandler : MonoBehaviour {
         if (colors[color] == projColor) {
             print("no damage taken, well blocked!");
             shieldHealth--;
+            Sprite.transform.localScale *= 0.5f;
         } else {
-            print("get hurt, nerd");
-            // UpdateLives(numLives - 1);
             numLives--;
             print("now have " + numLives + " lives");
         }
