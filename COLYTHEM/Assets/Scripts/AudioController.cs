@@ -33,11 +33,12 @@ public class AudioController : MonoBehaviour
             theTimer = 0;
             Fading();
         }
-        RedMixer.GetFloat("Redvol", out red);
-        BlueMixer.GetFloat("Bluevol", out blue);
-        Debug.Log("Red: " + red);
-        Debug.Log("Blue " + blue);
-        Debug.Log("Color: "+ GameHandler.color);
+        // Debuging
+        // RedMixer.GetFloat("Redvol", out red);
+        // BlueMixer.GetFloat("Bluevol", out blue);
+        // Debug.Log("Red: " + red);
+        // Debug.Log("Blue " + blue);
+        // Debug.Log("Color: "+ GameHandler.color);
     }
 
     // Update is called once per frame
