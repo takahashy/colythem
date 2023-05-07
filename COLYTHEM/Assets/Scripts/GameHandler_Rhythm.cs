@@ -9,7 +9,7 @@ public class GameHandler_Rhythm : MonoBehaviour{
     public GameObject beatThing;
     private Vector3 beatThingScale;
     //public float echoRadius = 5f;
-    private float beatLength = 0.27f; //this is the length of each beat! lower for faster bpm
+    private float beatLength = 0.275f; //this is the length of each beat! lower for faster bpm
 
     //timer stuff
     public int timer = 0;
@@ -46,37 +46,5 @@ public class GameHandler_Rhythm : MonoBehaviour{
         yield return new WaitForSeconds(beatLength * 0.6f);
         beatThing.transform.localScale = new Vector3(beatThingScale.x, beatThingScale.y, beatThingScale.z);
         canColor=false;
-
-        /*
-        float time = 0;
-		scaleModifier = scaleModifierStart;
-		float startValue = beatThingScale;
-		Vector3 startScale = theWave.transform.localScale;
-		//Debug.Log("wave start size = " + theWave.transform.localScale);
-		while (time < timeToLerp){
-			scaleModifier = Mathf.Lerp(startValue, echoRadius, time / timeToLerp);
-			theWave.transform.localScale = startScale * scaleModifier;
-			time += Time.deltaTime;
-			yield return null;
-		}
-		
-		//activate raycasts
-		//EchoRaycasts(theWave.transform.position);
-		
-		//reverse
-		time = 0;
-		scaleModifier = scaleModifierStart;
-		startScale = theWave.transform.localScale;
-		//Debug.Log("wave peak size = " + theWave.transform.localScale);
-		while (time < timeToLerp){
-			scaleModifier = Mathf.Lerp(echoRadius, startValue, time / timeToLerp);
-			theWave.transform.localScale = startScale * scaleModifier/echoRadius;
-			time += Time.deltaTime;
-			yield return null;
-		}
-        */
-
     }
-
-
 }
