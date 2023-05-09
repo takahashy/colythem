@@ -28,15 +28,17 @@ public class GameHandler_Rhythm : MonoBehaviour{
 
     void Start(){
         beatLength = (float)beatLengths[bpm];
-        Debug.Log(beatLength);
-
         beatThingScale = beatThing.transform.localScale;
     }
 
     // Update is called once per frame
     void FixedUpdate(){
         theTimer += 0.01f;
-        
+        if (timer == 15) { //reset after thirty seconds
+            timer = 0; 
+            theTimer = 0f;
+        }
+
         if (theTimer >= (beatLength * 0.6f)){
             canColor=true;
         }

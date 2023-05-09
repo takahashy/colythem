@@ -488,7 +488,7 @@ PrefabInstance:
     - target: {fileID: 2556661404923758521, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: eb87cb9b61fdbad44bd434e04911e6c9, type: 3}
+      objectReference: {fileID: 8300000, guid: 98b15c76a80997b4395ffffc47490659, type: 3}
     - target: {fileID: 2556661404923758521, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_PlayOnAwake
       value: 1
@@ -48832,6 +48832,10 @@ PrefabInstance:
       propertyPath: livesImage
       value: 
       objectReference: {fileID: 3603874203255724061}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: bpm
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
       propertyPath: beatLength
       value: 0.27
