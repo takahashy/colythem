@@ -49,10 +49,9 @@ public class GameHandler_Rhythm : MonoBehaviour{
 
     // Update is called once per frame
     void FixedUpdate(){
-        Debug.Log(theTimer);
         theTimer += 0.01f;
         loopTimer += 0.01f;
-        if (loopTimer >= (float)beatLength * 49) { //reset after 12 measures
+        if (loopTimer >= (float)beatLength * 48.5) { //reset after 12 measures
             loopTimer = 0f;
             resetAudio();
         }

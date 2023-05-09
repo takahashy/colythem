@@ -47525,7 +47525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 637208962179719729, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_Volume
-      value: 1
+      value: 0.764
       objectReference: {fileID: 0}
     - target: {fileID: 637208962179719729, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_audioClip
@@ -143482,6 +143482,34 @@ PrefabInstance:
       propertyPath: bpm
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: red
+      value: 
+      objectReference: {fileID: 1206410847}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: blue
+      value: 
+      objectReference: {fileID: 1206410848}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: drums
+      value: 
+      objectReference: {fileID: 1206410852}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: green
+      value: 
+      objectReference: {fileID: 1206410850}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: guitar
+      value: 
+      objectReference: {fileID: 1206410851}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: orange
+      value: 
+      objectReference: {fileID: 1206410849}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: purple
+      value: 
+      objectReference: {fileID: 1206410846}
     - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
       propertyPath: beatLength
       value: 0.27
