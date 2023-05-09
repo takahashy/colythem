@@ -141634,6 +141634,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -32
       objectReference: {fileID: 0}
+    - target: {fileID: 7510940970996838389, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: DrumsMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 7ab1bde48acf05d4fb19b342a28217f7, type: 2}
+    - target: {fileID: 7510940970996838389, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: GuitarMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 26424033aeb0f3b4b8df707817f96024, type: 2}
     - target: {fileID: 7510940970996838391, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
       propertyPath: textGameObject
       value: 
