@@ -41075,6 +41075,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3603874203255724061}
     - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: bpm
+      value: 108
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
       propertyPath: beatLength
       value: 0.27
       objectReference: {fileID: 0}

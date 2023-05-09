@@ -8,9 +8,15 @@ public class GameHandler_Rhythm : MonoBehaviour{
     public static bool canColor = false;
     public GameObject beatThing;
     private Vector3 beatThingScale;
+    public int bpm;
     //public float echoRadius = 5f;
-    private float beatLength = 0.275f; //this is the length of each beat! lower for faster bpm
-
+    // private float beatLength = 0.275f; //this is the length of each beat! lower for faster bpm
+    private Hashtable beatLengths = new Hashtable() {
+            {108, 0.275f},
+            {120, 0.235f}, 
+            {180, 0.165f}
+    };
+    private float beatLength;
     //timer stuff
     public int timer = 0;
     private float theTimer = 0f;
@@ -21,6 +27,9 @@ public class GameHandler_Rhythm : MonoBehaviour{
 
 
     void Start(){
+        beatLength = (float)beatLengths[bpm];
+        Debug.Log(beatLength);
+
         beatThingScale = beatThing.transform.localScale;
     }
 
