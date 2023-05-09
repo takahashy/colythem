@@ -34,7 +34,7 @@ public class GameHandler_Rhythm : MonoBehaviour{
     // Update is called once per frame
     void FixedUpdate(){
         theTimer += 0.01f;
-        if (timer == 15) { //reset after thirty seconds
+        if (timer == 15) { //reset after fifteen seconds
             timer = 0; 
             theTimer = 0f;
         }
