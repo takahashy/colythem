@@ -43,11 +43,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 26424033aeb0f3b4b8df707817f96024, type: 2}
   m_audioClip: {fileID: 8300000, guid: d0b166ead9966864c865574903896886, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
-  Mute: 1
+  Loop: 0
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -180,6 +180,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e958216c10dcb4aa0e01a57e3f7b3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DrumsMixer: {fileID: 0}
+  GuitarMixer: {fileID: 0}
+  GreenMixer: {fileID: 0}
+  OrangeMixer: {fileID: 0}
+  BlueMixer: {fileID: 0}
+  RedMixer: {fileID: 0}
+  PurpleMixer: {fileID: 0}
 --- !u!1 &637208961886115721
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,11 +230,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: fa39d8fe7ced5194c9f002d169c85e57, type: 2}
   m_audioClip: {fileID: 8300000, guid: d0b166ead9966864c865574903896886, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
-  Mute: 1
+  Loop: 0
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -351,11 +358,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 8487261d821b4d740b9c2a94dd6ad049, type: 2}
   m_audioClip: {fileID: 8300000, guid: d0b166ead9966864c865574903896886, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
-  Mute: 1
+  Loop: 0
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -479,11 +486,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 66f6da83ec3e8b3458e163d80be5c29c, type: 2}
   m_audioClip: {fileID: 8300000, guid: d0b166ead9966864c865574903896886, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
-  Mute: 1
+  Loop: 0
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -607,11 +614,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: f9f0975b983a99d49a0aa2d72dadb98c, type: 2}
   m_audioClip: {fileID: 8300000, guid: d0b166ead9966864c865574903896886, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
-  Mute: 1
+  Loop: 0
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -735,11 +742,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: f8e843742d923a941a062798ab53be8a, type: 2}
   m_audioClip: {fileID: 8300000, guid: d0b166ead9966864c865574903896886, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
-  Mute: 1
+  Loop: 0
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -863,11 +870,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 7ab1bde48acf05d4fb19b342a28217f7, type: 2}
   m_audioClip: {fileID: 8300000, guid: d0b166ead9966864c865574903896886, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
-  Mute: 1
+  Loop: 0
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
