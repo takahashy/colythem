@@ -16,7 +16,7 @@ public class PlayerMoveAround : MonoBehaviour {
     private Animator anim;
     public bool animate;    
     private GameHandler _gameobject;
-    public int current_lives = 3;
+    // public int current_lives = 3; // commented out, don't think it does anything?
     
     //for attacking
     public GameObject projectile;
@@ -91,32 +91,34 @@ public class PlayerMoveAround : MonoBehaviour {
             Vector2 position = transform.position;
 
             if (Input.GetKeyDown(KeyCode.RightArrow)) {
-                position.x += .5f;
-                transform.position = transform.position + Vector3.back * runSpeed * Time.deltaTime;
+                // position.x += .5f;
+                // transform.position = transform.position + Vector3.right * runSpeed * Time.deltaTime;
                 GameObject go = Instantiate(projectile, position, Quaternion.identity);
                 go.GetComponent<BulletController>().xspeed = 0.15f;
             }
             else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-                position.x -= -.5f;
-                transform.position = transform.position + Vector3.forward * runSpeed * Time.deltaTime;
+                // position.x -= -.5f;
+                // transform.position = transform.position + Vector3.left * runSpeed * Time.deltaTime;
                 GameObject go = Instantiate(projectile, position, Quaternion.identity);
                 go.GetComponent<BulletController>().xspeed = -0.15f;
 
 
             }
             else if (Input.GetKeyDown(KeyCode.UpArrow)) {
-                position.y += .5f;
-                transform.position = transform.position + Vector3.up * runSpeed * Time.deltaTime;
+                // position.y += .5f;
+                // transform.position = transform.position + Vector3.up * runSpeed * Time.deltaTime;
                 GameObject go = Instantiate(projectile, position, Quaternion.identity);
                 go.GetComponent<BulletController>().yspeed = 0.15f;
             }
             else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-                position.y -= -.5f;
-                transform.position = transform.position + Vector3.down * runSpeed * Time.deltaTime;
+                // position.y -= -.5f;
+                // transform.position = transform.position + Vector3.down * runSpeed * Time.deltaTime;
                 GameObject go = Instantiate(projectile, position, Quaternion.identity);
                 go.GetComponent<BulletController>().yspeed = -0.15f;
             }
             Attack(false);
+            // print("Current position: ");
+            // print(position);
         }
     }
 

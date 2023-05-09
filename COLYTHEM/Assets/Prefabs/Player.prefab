@@ -50,8 +50,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373fae4ea22cccf4888832403c28b2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sprite: {fileID: 0}
   Red_Field: {fileID: 0}
   Blue_Field: {fileID: 0}
+  Green_Field: {fileID: 0}
+  Orange_Field: {fileID: 0}
+  Purple_Field: {fileID: 0}
+  Gray_Field: {fileID: 0}
 --- !u!1 &1194172052813251741
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +156,6 @@ MonoBehaviour:
   startSpeed: 10
   isAlive: 1
   animate: 0
-  current_lives: 0
   projectile: {fileID: 3543420312289212564, guid: 299f7e1b136b249bb994fc6f4711d28b, type: 3}
   attackRange: 10
 --- !u!1 &1194172053068920484
@@ -252,8 +256,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373fae4ea22cccf4888832403c28b2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sprite: {fileID: 0}
   Red_Field: {fileID: 0}
   Blue_Field: {fileID: 0}
+  Green_Field: {fileID: 0}
+  Orange_Field: {fileID: 0}
+  Purple_Field: {fileID: 0}
+  Gray_Field: {fileID: 0}
 --- !u!95 &1194172053068920488
 Animator:
   serializedVersion: 4

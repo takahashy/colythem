@@ -99,9 +99,10 @@ public class EnemyMoveShoot : MonoBehaviour {
             // StopCoroutine("HitEnemy");
             // StartCoroutine("HitEnemy");
             //}
-            print("collided with enemy");
+            
+        //     print("collided with enemy"); 
             if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "playerProjectile") {
-                    print("hit by " + collision.gameObject.tag);
+                //     print("hit by " + collision.gameObject.tag);
                     EnemyLives -= 1;
                     StopCoroutine("HitEnemy");
                     StartCoroutine("HitEnemy");

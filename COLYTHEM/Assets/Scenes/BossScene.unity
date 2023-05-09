@@ -19279,7 +19279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952462816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 76.9, y: 0.01, z: 0}
+  m_LocalPosition: {x: 43.15, y: -0.15, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19300,7 +19300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1298267300}
   sceneTriggerCollider: {fileID: 952462818}
-  sceneToLoad: WaterMap
+  sceneToLoad: Win Scene
 --- !u!1001 &989918165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48092,7 +48092,10 @@ MonoBehaviour:
   projectiles:
   - {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
   - {fileID: 4366355251345894893, guid: c38a7750e41244195ad2a400a8d41348, type: 3}
-  numProjectiles: 2
+  - {fileID: 4366355251345894893, guid: 041db66ba22beb640b4084a1115fc87c, type: 3}
+  - {fileID: 4366355251345894893, guid: 24cf69d72b4c64148874bd98bcc7fa55, type: 3}
+  - {fileID: 4366355251345894893, guid: 712fa331d9bc2ad409597a6a73e737e7, type: 3}
+  numProjectiles: 5
   EnemyLives: 20
   attackRange: 12
   isAttacking: 0
@@ -48363,11 +48366,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6593752363184153952, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.3
+      value: 38.87
       objectReference: {fileID: 0}
     - target: {fileID: 6593752363184153952, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.4
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6593752363184153952, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
       propertyPath: m_LocalPosition.z
