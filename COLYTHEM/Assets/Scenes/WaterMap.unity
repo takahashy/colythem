@@ -401,7 +401,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &336155361
 PrefabInstance:
@@ -528,6 +528,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa0ae959cb0be4a909d4097614668587, type: 3}
+--- !u!1001 &447907347
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6052569933060594138, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1650036964}
+    - target: {fileID: 6052569933060594138, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: sceneToLoad
+      value: FireMap
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052569933060594139, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052569933060594139, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 54.63934
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052569933060594139, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.988569
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052569933060594139, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052569933060594139, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052569933060594139, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052569933060594139, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052569933060594139, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052569933060594139, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052569933060594139, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052569933060594139, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052569933060594143, guid: fc5597346701c4b719d933e0823d9321, type: 3}
+      propertyPath: m_Name
+      value: NextLevel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fc5597346701c4b719d933e0823d9321, type: 3}
 --- !u!1001 &466959843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -141866,6 +141931,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1194172053068920491, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+--- !u!1 &1650036964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1194172052813251741, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
+  m_PrefabInstance: {fileID: 1650036963}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1657116435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -142506,7 +142576,7 @@ Transform:
   - {fileID: 900584216}
   - {fileID: 1394397313}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2120795211 stripped
 SpriteRenderer:
