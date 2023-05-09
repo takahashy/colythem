@@ -98767,7 +98767,7 @@ PrefabInstance:
     - target: {fileID: 637208962179719729, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: e00cce62d0c579e46abbac9a0b8eb557, type: 3}
     - target: {fileID: 637208962179719729, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
@@ -98878,6 +98878,41 @@ PrefabInstance:
       objectReference: {fileID: 24300002, guid: bcb29a4e9c2f53f49a779586de4b07d9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+--- !u!82 &1206410846 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208962519259391, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1206410847 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208962179719729, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1206410848 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208962192772664, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1206410849 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208962267704701, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1206410850 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208961886115727, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1206410851 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208961249378613, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1206410852 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208962920636005, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1273707000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -142699,6 +142734,34 @@ PrefabInstance:
       propertyPath: bpm
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: red
+      value: 
+      objectReference: {fileID: 1206410847}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: blue
+      value: 
+      objectReference: {fileID: 1206410848}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: drums
+      value: 
+      objectReference: {fileID: 1206410852}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: green
+      value: 
+      objectReference: {fileID: 1206410850}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: guitar
+      value: 
+      objectReference: {fileID: 1206410851}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: orange
+      value: 
+      objectReference: {fileID: 1206410849}
+    - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
+      propertyPath: purple
+      value: 
+      objectReference: {fileID: 1206410846}
     - target: {fileID: 8409727752413973787, guid: 68e63386c1cc86440babbc5152af484a, type: 3}
       propertyPath: beatLength
       value: 0.27
