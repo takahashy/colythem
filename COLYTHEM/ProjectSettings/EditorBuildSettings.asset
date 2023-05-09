@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FireMap.unity
     guid: bfd55fdd9b310470dba9b99963df2beb
+  - enabled: 1
+    path: Assets/Scenes/End Boss.unity
+    guid: 95be26f382df2437e9442c9ae0214c8f
+  - enabled: 1
+    path: Assets/Scenes/End Fire.unity
+    guid: 9d6e8778292fb4879bc9585e32eb0872
+  - enabled: 1
+    path: Assets/Scenes/End Water.unity
+    guid: 69fc7ef2aa6a14b98bb82942acfd5f86
   m_configObjects: {}
