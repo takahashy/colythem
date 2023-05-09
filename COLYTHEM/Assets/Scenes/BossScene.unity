@@ -18755,7 +18755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1194172052813251712, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1194172052813251712, guid: 2852668aa45df49648f73cb4c4cc2d74, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19279,7 +19279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952462816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 109.45, y: 0.01, z: 0}
+  m_LocalPosition: {x: 76.9, y: 0.01, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48068,6 +48068,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1694521156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6593752363184153957, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
+  m_PrefabInstance: {fileID: 4251235163002822462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1694521162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694521156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 367d22c655ca746e69793170a626ec33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  stoppingDistance: 7
+  retreatDistance: 3
+  startTimeBtwShots: 0.3
+  projectiles:
+  - {fileID: 4366355251345894893, guid: abe1ba212ac474af8b7bec4c207ba51e, type: 3}
+  - {fileID: 4366355251345894893, guid: c38a7750e41244195ad2a400a8d41348, type: 3}
+  numProjectiles: 2
+  EnemyLives: 20
+  attackRange: 12
+  isAttacking: 0
 --- !u!1 &1697027734
 GameObject:
   m_ObjectHideFlags: 0
@@ -48268,7 +48296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951787917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.2, y: 0, z: -10}
+  m_LocalPosition: {x: 0.2, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48321,6 +48349,10 @@ PrefabInstance:
       propertyPath: colorupgrade
       value: 
       objectReference: {fileID: 183340149}
+    - target: {fileID: 29567879175742945, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b838ab5aad48948c19ef6216d87fd4d3, type: 3}
     - target: {fileID: 1016327661929431878, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1
@@ -48331,11 +48363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6593752363184153952, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 88.4
+      value: 42.3
       objectReference: {fileID: 0}
     - target: {fileID: 6593752363184153952, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.08
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6593752363184153952, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -48369,9 +48401,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6593752363184153953, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593752363184153953, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593752363184153953, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
+      propertyPath: stoppingDistance
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593752363184153953, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
+      propertyPath: startTimeBtwShots
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6593752363184153957, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
       propertyPath: m_Name
-      value: MiniBoss
+      value: Dermit
       objectReference: {fileID: 0}
     - target: {fileID: 7961171132151175200, guid: 5c6517bf4b9cb41bfbb1a89dac31edf6, type: 3}
       propertyPath: m_Layer
