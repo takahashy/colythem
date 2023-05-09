@@ -34,7 +34,27 @@ public class GameHandler : MonoBehaviour {
 
         if (numLives <= 0) {
             Debug.Log("You died.");
-            SceneManager.LoadScene("End Screen");
+            Scene currentScene = SceneManager.GetActiveScene ();
+            string sceneName = currentScene.name;
+            Debug.Log(sceneName);
+            if (sceneName == "WaterMap") {
+                Debug.Log("Going to WaterMap");
+                SceneManager.LoadScene("End Water");
+            }
+            
+            if (sceneName == "FireMap") {
+                Debug.Log("Going to FireMap");
+                SceneManager.LoadScene("End Fire");
+            }
+            
+            if (sceneName == "BossScene") {
+                Debug.Log("Going to BossScene");
+                SceneManager.LoadScene("End Boss");
+            }
+            
+            if (sceneName == "Tutorial (Nick)") {
+                SceneManager.LoadScene("End Screen");
+            }
         }
         
         if (winCondition == true) {

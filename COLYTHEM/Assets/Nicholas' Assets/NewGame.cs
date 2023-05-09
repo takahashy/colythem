@@ -24,4 +24,19 @@ public class NewGame : MonoBehaviour
         Debug.Log("Testing!");
         SceneManager.LoadScene("Start Screen");
     }
+    
+    public void RestartWater()
+    {
+        SceneManager.LoadScene("WaterMap");
+    }
+    
+    public void RestartFire()
+    {
+        SceneManager.LoadScene("FireMap");
+    }
+    
+    public void RestartBoss()
+    {
+        SceneManager.LoadScene("BossScene");
+    }
 }
