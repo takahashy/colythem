@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class GameHandler_Rhythm : MonoBehaviour{
     // Notes: Need visual feedback of failure () + visual for beats + beat first then music instead of music then beat
+    // public AudioSource[] sounds;
+    // public AudioSource drums;
+    // public AudioSource guitar;
+    // public AudioSource blue;
+    // public AudioSource red;
+    // public AudioSource green;
+    // public AudioSource orange;
+    // public AudioSource purple;
 
     public static bool canColor = false;
     public GameObject beatThing;
@@ -20,6 +28,7 @@ public class GameHandler_Rhythm : MonoBehaviour{
     //timer stuff
     public int timer = 0;
     private float theTimer = 0f;
+    private bool doneWith12Measures;
 
 	//public float timeToLerp = 0.5f;
 	//public float scaleModifier;
@@ -27,6 +36,21 @@ public class GameHandler_Rhythm : MonoBehaviour{
 
 
     void Start(){
+        // sounds = GetComponents<AudioSource>();
+        // drums = sounds[0];
+        // guitar = sounds[1];
+        // red = sounds[2];
+        // green = sounds[3];
+        // orange = sounds[4];
+        // purple = sounds[5];
+        // blue = sounds[6];;        
+        // drums.Play();
+        // guitar.Play();
+        // red.Play();
+        // blue.Play();
+        // green.Play();
+        // orange.Play();
+        // purple.Play();
         beatLength = (float)beatLengths[bpm];
         beatThingScale = beatThing.transform.localScale;
     }
@@ -34,9 +58,12 @@ public class GameHandler_Rhythm : MonoBehaviour{
     // Update is called once per frame
     void FixedUpdate(){
         theTimer += 0.01f;
-        if (timer == 15) { //reset after fifteen seconds
+        doneWith12Measures = theTimer == beatLength * 48 ? true : false;
+        if (doneWith12Measures) { //reset after 12 measures
             timer = 0; 
             theTimer = 0f;
+            // resetAudio();
+
         }
 
         if (theTimer >= (beatLength * 0.6f)){
@@ -49,6 +76,23 @@ public class GameHandler_Rhythm : MonoBehaviour{
             StartCoroutine(beatPulse(beatThing));
         }
     }
+
+    // void resetAudio() {
+        // drums.Stop();
+        // guitar.Stop();
+        // red.Stop();
+        // blue.Stop();
+        // green.stop();
+        // orange.stop();
+        // purple.stop();
+        // drums.Play();
+        // guitar.Play();
+        // red.Play();
+        // blue.Play();
+        // green.Play();
+        // orange.Play();
+        // purple.Play();
+    // }
 
     IEnumerator beatPulse(GameObject theWave){
         //temporary big and small code. Fix the better pulse code below
