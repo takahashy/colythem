@@ -572,7 +572,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &374503138 stripped
 MonoBehaviour:
@@ -47633,6 +47633,41 @@ PrefabInstance:
       objectReference: {fileID: 24300002, guid: bcb29a4e9c2f53f49a779586de4b07d9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+--- !u!82 &1206410846 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208962519259391, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1206410847 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208962179719729, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1206410848 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208962192772664, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1206410849 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208962267704701, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1206410850 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208961886115727, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1206410851 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208961249378613, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1206410852 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 637208962920636005, guid: 0fb663c7fcf3d9b498b340735f311f8a, type: 3}
+  m_PrefabInstance: {fileID: 1206410845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1266818636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -142648,7 +142683,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 49
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1519032919
 PrefabInstance:
@@ -144020,7 +144055,7 @@ Transform:
   - {fileID: 900584216}
   - {fileID: 1394397313}
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2120795211 stripped
 SpriteRenderer:
