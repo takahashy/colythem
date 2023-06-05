@@ -1,0 +1,1 @@
+Colythm is a rhythm game in which you attempt to traverse a world of many colors – if the slimes will let you! Switch shield colors on the beat to become impervious to slimes’ projectiles and try and collect every color available!
